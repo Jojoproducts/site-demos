@@ -62,10 +62,10 @@ nav .btn{min-height:44px;padding:0 14px;font-size:16px}
 
 .strip{background:var(--acc);color:var(--accd)}
 .strip .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
-.strip div{padding:18px 0}
+.strip .wrap>div{padding:18px 0}
 .strip b{display:block;font:800 clamp(28px,5vw,44px)/1 var(--disp);text-transform:uppercase}
 .strip span{font-weight:600;font-size:16px;line-height:1.3;display:block;margin-top:4px}
-@media(min-width:900px){.strip .wrap{grid-template-columns:repeat(4,1fr)}.strip div{padding:26px 0}}
+@media(min-width:900px){.strip .wrap{grid-template-columns:repeat(4,1fr)}.strip .wrap>div{padding:26px 0}}
 
 section{padding:72px 0}
 h2{font-size:clamp(40px,7vw,76px);max-width:14ch}
@@ -90,6 +90,10 @@ h2{font-size:clamp(40px,7vw,76px);max-width:14ch}
 @media(min-width:900px){.grid{grid-template-columns:.8fr 1.4fr 1fr;grid-template-rows:400px}}
 
 .why{display:grid;gap:40px}
+.climb{position:relative;border-radius:var(--r);overflow:hidden;background:var(--bg3);margin:0;aspect-ratio:3/4;max-height:620px}
+.climb img{width:100%;height:100%;object-fit:cover}
+.climb figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 16px 14px;background:linear-gradient(transparent,rgba(10,22,15,.88));font-size:16px}
+.open{margin-top:26px;font:800 28px/1.1 var(--disp);text-transform:uppercase;color:var(--acc)}
 .hours{background:var(--bg3);border-radius:var(--r);padding:28px;border:1px solid var(--line)}
 .hours h3{font-size:38px;margin-bottom:14px}
 .hours dl{display:grid;grid-template-columns:auto 1fr;gap:8px 24px;font-size:18px}
@@ -134,7 +138,7 @@ footer{padding:36px 0;color:var(--mute);font-size:15px;border-top:1px solid var(
 
 <nav><div class="wrap">
   <a class="brand" href="#top">J&amp;I <span>Tree Service</span></a>
-  <ul><li><a href="#services">Services</a></li><li><a href="#work">Our work</a></li><li><a href="#hours">Hours</a></li><li><a href="#estimate">Contact</a></li></ul>
+  <ul><li><a href="#services">Services</a></li><li><a href="#about">Why us</a></li><li><a href="#estimate">Contact</a></li></ul>
   <a class="btn p" href="tel:+19804772960">Call (980) 477-2960</a>
 </div></nav>
 
@@ -149,7 +153,7 @@ footer{padding:36px 0;color:var(--mute);font-size:15px;border-top:1px solid var(
     </div>
   </div>
   <div class="photo">
-    <img src="https://primary.jwwb.nl/public/v/o/p/temp-icfqxlnreciuvvfsnjho/pxl_20251108_133310579-raw-01-mp-cover-high.jpg?enable-io=true&amp;crop=1.4286%3A1&amp;width=816" alt="Tree work by J&amp;I Tree Service and Lawncare in Charlotte" width="779" height="545" fetchpriority="high">
+    <img src="assets/img-7ed16d371a.webp" alt="Tree work by J&amp;I Tree Service and Lawncare in Charlotte" width="779" height="545" fetchpriority="high">
     <div class="stamp">5.0 on Google<small>48 reviews</small></div>
   </div>
 </div>
@@ -158,7 +162,7 @@ footer{padding:36px 0;color:var(--mute);font-size:15px;border-top:1px solid var(
   <div><b>5.0 stars</b><span>on Google</span></div>
   <div><b>48 reviews</b><span>on Google</span></div>
   <div><b>Free estimate</b><span>Call or send the form</span></div>
-  <div><b>Open Sundays</b><span>Mon-Sat listed as 24/7</span></div>
+  <div><b>Charlotte, NC</b><span>Open 7 days</span></div>
 </div></div>
 
 <section id="services"><div class="wrap">
@@ -173,17 +177,7 @@ footer{padding:36px 0;color:var(--mute);font-size:15px;border-top:1px solid var(
   </div>
 </div></section>
 
-<section class="work" id="work"><div class="wrap">
-  <h2 class="rv">Our latest work</h2>
-  <p class="sub rv">Real jobs, real trees. Each one shows our attention to detail.</p>
-  <div class="grid">
-    <figure class="rv"><img loading="lazy" src="https://primary.jwwb.nl/public/v/o/p/temp-icfqxlnreciuvvfsnjho/screenshot_20251116_095107_photos-high-high.jpg?enable-io=true&amp;width=532" alt="Recent tree job by J&amp;I Tree Service" width="369" height="799"><figcaption>Recent job</figcaption></figure>
-    <figure class="rv"><img loading="lazy" src="https://primary.jwwb.nl/public/v/o/p/temp-icfqxlnreciuvvfsnjho/screenshot-1763343679494-high.png?enable-io=true&amp;width=816" alt="Tree trimming result by J&amp;I Tree Service" width="779" height="341"><figcaption>Beautiful trees, expertly trimmed</figcaption></figure>
-    <figure class="rv logo-tile"><img loading="lazy" src="https://primary.jwwb.nl/public/v/o/p/temp-icfqxlnreciuvvfsnjho/fulllogo-standard.jpg" alt="J&amp;I Tree Services and Lawncare Inc logo" width="1280" height="1024"></figure>
-  </div>
-</div></section>
-
-<section id="hours"><div class="wrap why">
+<section id="about"><div class="wrap why">
   <div>
     <h2 class="rv">Trusted tree experts in Charlotte</h2>
     <ul class="pts">
@@ -191,12 +185,9 @@ footer{padding:36px 0;color:var(--mute);font-size:15px;border-top:1px solid var(
       <li class="rv">Competitive pricing and flexible options to meet your needs.</li>
       <li class="rv">Rated 5.0 on Google across 48 reviews.</li>
     </ul>
+    <p class="open">Open 7 days. Based in Charlotte, NC.</p>
   </div>
-  <div class="hours rv">
-    <h3>Opening hours</h3>
-    <dl><dt>Mon - Fri</dt><dd>24/7</dd><dt>Saturday</dt><dd>24/7</dd><dt>Sunday</dt><dd>Open</dd></dl>
-    <p style="margin-top:18px;color:var(--mute)">Based in Charlotte, NC.</p>
-  </div>
+  <figure class="climb rv"><img loading="lazy" src="assets/img-9a5a426b6c.webp" alt="Climber working in a tree on a J&amp;I Tree Service job" width="369" height="799"><figcaption>On a recent job</figcaption></figure>
 </div></section>
 
 <section class="quote" id="estimate"><div class="wrap">
@@ -221,7 +212,7 @@ footer{padding:36px 0;color:var(--mute);font-size:15px;border-top:1px solid var(
 </div></section>
 </main>
 
-<footer><div class="wrap">&copy; J&amp;I Tree Service and Lawncare, Inc. Charlotte, NC. Website concept, not the official site.</div></footer>
+<footer><div class="wrap" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap"><img src="assets/img-baa6030fb2.webp" alt="J&amp;I Tree Services and Lawncare Inc logo" width="80" height="64" style="width:80px;height:auto;border-radius:6px"><span>&copy; J&amp;I Tree Service and Lawncare, Inc. Charlotte, NC. Website concept, not the official site.</span></div></footer>
 
 <div class="bar"><a class="btn p" href="tel:+19804772960">Call now</a><a class="btn g" href="#estimate">Estimate</a></div>
 

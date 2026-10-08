@@ -40,8 +40,8 @@ header{border-bottom:1px solid var(--line)}
 .hero h1 em{font-style:normal;color:var(--or);display:block}
 .hero p{max-width:34ch;color:var(--mu);font-size:19px;margin:22px 0 28px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
-.hero-img{position:relative;aspect-ratio:4/5;max-height:640px;background:var(--bg2)}
-.hero-img img{width:100%;height:100%;object-fit:cover;object-position:30% 60%}
+.hero-img{position:relative;aspect-ratio:1/1;max-height:560px;background:var(--bg2)}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:20% 88%}
 .hero-img::after{content:"";position:absolute;left:-10px;bottom:-10px;width:45%;height:38%;border-left:6px solid var(--or);border-bottom:6px solid var(--or);pointer-events:none}
 .strip{background:var(--or);color:var(--ink)}
 .strip .wrap{display:flex;flex-wrap:wrap;gap:8px 36px;align-items:center;padding-top:18px;padding-bottom:18px}
@@ -71,10 +71,10 @@ section{padding:72px 0}
 .pts{display:grid;gap:26px;margin-top:36px}
 .pts h3{font-size:30px;color:var(--or);margin-bottom:6px}
 .pts p{color:var(--mu);font-size:16.5px;max-width:48ch}
-.area{display:grid;gap:36px;align-items:center}
-.big{font:800 clamp(64px,17vw,190px)/.85 var(--f1);text-transform:uppercase}
+.area{display:grid;gap:36px;align-items:stretch}.area>div{align-self:center}
+.big{font:800 clamp(48px,10vw,104px)/.9 var(--f1);text-transform:uppercase}
 .big span{color:var(--or);display:block}
-.area img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 40%}
+.area img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 30%}
 .hrs{display:flex;flex-wrap:wrap;gap:28px;margin-top:26px;font-size:17px}
 .hrs b{display:block;font:700 15px var(--f1);letter-spacing:.1em;text-transform:uppercase;color:var(--or)}
 .hrs a{display:inline-block;min-height:44px;padding-top:8px}
@@ -83,7 +83,6 @@ section{padding:72px 0}
 .quote .h2{max-width:12ch}
 .quote .lead{color:#2a1a00}
 .quote .ct a{display:block;font:800 clamp(30px,6vw,46px)/1.15 var(--f1);text-decoration:none;letter-spacing:.02em;min-height:44px}
-.quote .ct a.sm{font-size:22px;word-break:break-all}
 form{background:var(--bg);color:var(--tx);padding:26px 22px;display:grid;gap:18px}
 label{display:grid;gap:7px;font:700 16px var(--f1);letter-spacing:.08em;text-transform:uppercase}
 input,select,textarea{font:400 17px var(--f2);color:var(--tx);background:#1b2a22;border:1px solid #4a5d52;border-radius:var(--r);padding:12px 14px;min-height:48px;width:100%;text-transform:none;letter-spacing:0}
@@ -106,14 +105,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
  .hero{padding:56px 40px 80px}
  .nav nav{display:flex}.nav .btn span{display:inline;margin-left:6px}
  .hero{grid-template-columns:7fr 5fr;align-items:center;gap:48px}
- .hero-img{aspect-ratio:3/4}
+ .hero-img{aspect-ratio:4/5;max-height:640px}.hero-img img{object-position:30% 70%}
  .bento{grid-template-columns:repeat(6,1fr)}
  .t1{grid-column:span 4}.t2{grid-column:span 2}.t3{grid-column:span 2}.t4{grid-column:span 4}
- .also{grid-column:span 6;display:grid;grid-template-columns:1fr 1.4fr;gap:30px;align-items:start}
- .also h3{margin:0}
+ .also{grid-column:span 6;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
+ .also h3{margin:0;white-space:nowrap}
  .tile{min-height:380px}
  .eq{grid-template-columns:5fr 6fr;gap:72px;align-items:center}
- .area{grid-template-columns:7fr 5fr;gap:56px}
+ .area{grid-template-columns:1fr 1fr;gap:56px}.area img{aspect-ratio:5/4;height:auto;max-height:520px}
  .qg{grid-template-columns:5fr 6fr;gap:72px;align-items:start}
  .f2{grid-template-columns:1fr 1fr}
  form{padding:36px}
@@ -126,7 +125,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <header>
  <div class="wrap nav">
-  <a href="#top" aria-label="Rene Tree Service LLC home"><img src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F655d2692474c5c6ab7bc4faf%2FiconAndLogo%2FRene%20Tree%20Service%20LLC%20-%20WH.png?alt=media&amp;token=4fd00ea6-9767-4a7b-b0b2-070e135a2b0a" alt="Rene Tree Service LLC logo" width="160" height="46"></a>
+  <a href="#top" aria-label="Rene Tree Service LLC home"><img src="assets/img-7f0b644f81.webp" alt="Rene Tree Service LLC logo" width="160" height="46"></a>
   <nav aria-label="Main"><a href="#services">Services</a><a href="#equipment">Equipment</a><a href="#area">Service area</a><a href="#estimate">Contact</a></nav>
   <a class="btn p" href="tel:+19808758723">Call<span>(980) 875-8723</span></a>
  </div>
@@ -139,7 +138,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   <p class="rv">Trimming, stump grinding and emergency tree work for homes and businesses. Free estimate.</p>
   <div class="cta rv"><a class="btn p" href="tel:+19808758723">Call (980) 875-8723</a><a class="btn g" href="#estimate">Request an estimate</a></div>
  </div>
- <div class="hero-img rv"><img src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F655d2692474c5c6ab7bc4faf%2Fgallery%2FRene%20Tree%20Service%20LLC-2024-07-13T16%3A34%3A52.835Z-3.jpg?alt=media&amp;token=cd3f7f99-1a9d-472f-a9e9-17aea34fcf17" alt="Rene Tree Service bucket truck and chipper parked at a Charlotte home while a crew member works high in a tree" fetchpriority="high"></div>
+ <div class="hero-img rv"><img src="assets/img-d36b83bc76.webp" alt="Orange work truck with a painted climber and phone numbers parked on a residential drive, with a yellow lift boom rising into tall bare trees" fetchpriority="high"></div>
 </div>
 
 <div class="strip"><div class="wrap">
@@ -153,20 +152,20 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
  <h2 class="h2 rv">What we take down, trim and clear.</h2>
  <p class="lead rv">Every job starts with an assessment of the tree and the property around it.</p>
  <div class="bento">
-  <article class="tile t1 rv"><img src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F655d2692474c5c6ab7bc4faf%2Fgallery%2FRene%20Tree%20Service%20LLC-2025-08-28T17%3A47%3A31.701Z-1.jpg?alt=media&amp;token=995c024f-2f5c-4d26-9c4b-1f908897a50b" alt="Climber working high in a large tree beside a house" loading="lazy" style="object-position:50% 25%"><div><h3>Tree removal</h3><p>Large, leaning or dead trees taken down with care around homes and fences.</p></div></article>
-  <article class="tile t2 rv"><img src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F655d2692474c5c6ab7bc4faf%2Fgallery%2FRene%20Tree%20Service%20LLC-2024-04-13T16%3A59%3A22.893Z-5.jpg?alt=media&amp;token=829cdbc4-2392-4814-8036-ecad88a633e8" alt="Crew cutting a huge tree stump beside a tracked stump grinder" loading="lazy" style="object-position:70% 40%"><div><h3>Stump grinding</h3><p>Stumps ground out of the yard.</p></div></article>
-  <article class="tile t3 rv"><img src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F655d2692474c5c6ab7bc4faf%2Fgallery%2FRene%20Tree%20Service%20LLC-2024-10-03T20%3A37%3A28.294Z-2.jpg?alt=media&amp;token=6439426b-45ed-4f9a-bf16-80f10fdb2009" alt="Cut tree trunk sections lying in a landscaped backyard after a job" loading="lazy" style="object-position:30% 50%"><div><h3>Storm cleanup</h3><p>Fallen limbs and trunks cleared.</p></div></article>
-  <article class="tile t4 rv"><img src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F655d2692474c5c6ab7bc4faf%2Fgallery%2FRene%20Tree%20Service%20LLC-2025-08-28T17%3A47%3A31.700Z-0.jpg?alt=media&amp;token=0736ecf6-e6d2-424d-a4a6-fc8b1eae863d" alt="Arborist high in the canopy trimming branches above a roofline" loading="lazy" style="object-position:50% 30%"><div><h3>Trimming and pruning</h3><p>Branches taken back from roofs and shaped for the health of the tree.</p></div></article>
+  <article class="tile t1 rv"><img src="assets/img-709be7928a.webp" alt="Climber working high in a large tree beside a house" loading="lazy" style="object-position:50% 25%"><div><h3>Tree removal</h3><p>Large, leaning or dead trees taken down with care around homes and fences.</p></div></article>
+  <article class="tile t2 rv"><img src="assets/img-06aa9c45f0.webp" alt="Crew cutting a huge tree stump beside a tracked stump grinder" loading="lazy" style="object-position:70% 40%"><div><h3>Stump grinding</h3><p>Stumps ground out of the yard.</p></div></article>
+  <article class="tile t3 rv"><img src="assets/img-47a2ca305f.webp" alt="Cut tree trunk sections lying in a landscaped backyard after a job" loading="lazy" style="object-position:30% 50%"><div><h3>Storm cleanup</h3><p>Fallen limbs and trunks cleared.</p></div></article>
+  <article class="tile t4 rv"><img src="assets/img-35b81899f7.webp" alt="Arborist high in the canopy trimming branches above a roofline" loading="lazy" style="object-position:50% 30%"><div><h3>Trimming and pruning</h3><p>Branches taken back from roofs and shaped for the health of the tree.</p></div></article>
   <div class="also rv"><h3>Also on the truck</h3><div><ul><li>Tree assessments for hazards</li><li>Disease management</li><li>Emergency tree services</li></ul><p>Rene Tree Service also offers landscaping, artificial turf, fences, painting and drywall.</p></div></div>
  </div>
 </div></section>
 
 <section id="equipment" class="equip"><div class="wrap eq">
- <div class="ph rv"><img src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F655d2692474c5c6ab7bc4faf%2Fgallery%2FRene%20Tree%20Service%20LLC-2024-04-23T15%3A03%3A29.582Z-10.jpg?alt=media&amp;token=d35d1a86-4c9d-49ab-97a1-7e744ffb32b7" alt="Yellow bucket truck boom reaching a tall tree beside a house" loading="lazy" style="object-position:55% 40%"><img src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F655d2692474c5c6ab7bc4faf%2Fgallery%2FRene%20Tree%20Service%20LLC-2025-08-28T17%3A47%3A31.702Z-3.jpg?alt=media&amp;token=18b6b063-d136-45ee-b2e1-8be17c9e2ccf" alt="Crew member in a bucket lift cutting a tall vine-covered trunk with sawdust in the air" loading="lazy" style="object-position:55% 50%"></div>
+ <div class="ph rv"><img src="assets/img-3e10fbb740.webp" alt="Yellow bucket truck boom reaching a tall tree beside a house" loading="lazy" style="object-position:55% 40%"><img src="assets/img-e9fd8bfac8.webp" alt="Crew member in a bucket lift cutting a tall vine-covered trunk with sawdust in the air" loading="lazy" style="object-position:55% 50%"></div>
  <div>
   <h2 class="h2 rv">Built to reach what a ladder can't.</h2>
   <div class="pts">
-   <div class="rv"><h3>State-of-the-art equipment</h3><p>Their own bucket truck and chipper (pictured) for tall trees.</p></div>
+   <div class="rv"><h3>State-of-the-art equipment</h3><p>State-of-the-art equipment for safe, efficient tree care.</p></div>
    <div class="rv"><h3>Certified arborists</h3><p>Care for the health and beauty of your trees, with safety on every job.</p></div>
    <div class="rv"><h3>Over a decade in Charlotte</h3><p>Trusted by residential and commercial clients, and rated 4.9 on Google across 92 reviews.</p></div>
   </div>
@@ -178,7 +177,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   <div class="big rv">Serving<span>Charlotte, NC</span></div>
   <div class="hrs rv"><div><b>Hours</b>Monday to Friday<br>8:00 AM to 5:00 PM</div><div><b>Call</b><a href="tel:+19808758723">(980) 875-8723</a><br><a href="tel:+17049675933">(704) 967-5933</a></div></div>
  </div>
- <img class="rv" src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F655d2692474c5c6ab7bc4faf%2Fgallery%2FRene%20Tree%20Service%20LLC-2025-08-28T17%3A47%3A31.701Z-2.jpg?alt=media&amp;token=7e6d7dc8-627a-4472-825d-73668e10b190" alt="Bucket truck and a pile of cut branches beside a Charlotte street after a tree job" loading="lazy">
+ <img class="rv" src="assets/img-35b1269d73.webp" alt="Yellow lift boom over a pile of cut branches and a trunk lying on a street-side lawn" loading="lazy">
 </div></section>
 
 <div class="quote" id="estimate"><div class="wrap qg">

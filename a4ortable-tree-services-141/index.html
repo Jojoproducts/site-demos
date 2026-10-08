@@ -57,14 +57,14 @@ header.top{position:absolute;left:0;right:0;top:auto;z-index:5}
 /* hero */
 .hero{position:relative;min-height:max(640px,calc(100dvh - 38px));display:flex;align-items:flex-end;padding:120px 0 56px;isolation:isolate}
 .hero .bg{position:absolute;inset:0;z-index:-2}
-.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:60% 55%;filter:saturate(.95) contrast(1.05)}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:56% 50%;filter:saturate(.95) contrast(1.05)}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(6,20,43,.94) 0%,rgba(6,20,43,.78) 45%,rgba(6,20,43,.15) 100%),linear-gradient(0deg,var(--ink) 0%,transparent 30%)}
 .hero h1{font-size:clamp(48px,10.5vw,124px);max-width:11ch;margin-bottom:22px}
 .hero h1 em{font-style:normal;color:var(--orange);display:block}
 .hero p.sub{max-width:34ch;font-size:19px;color:#dbe4ec;margin-bottom:30px}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
 .ctas .btn{flex:1 1 200px;max-width:260px}
-@media(max-width:899px){.hero{padding-bottom:40px!important;min-height:auto;padding-top:96px}.hero .bg img{object-position:28% 50%}.hero h1{margin-top:150px}.ctas .btn{max-width:none}}
+@media(max-width:899px){.hero{padding-bottom:40px!important;min-height:auto;padding-top:96px}.hero .bg img{object-position:56% 50%}.hero h1{margin-top:150px}.ctas .btn{max-width:none}}
 
 /* proof rail */
 .rail{background:var(--orange);color:#1a0a00}
@@ -84,7 +84,8 @@ section{padding:84px 0}
 .slab img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s cubic-bezier(.16,1,.3,1)}
 .slab:hover img{transform:scale(1.04)}
 .slab::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(6,20,43,.96) 8%,rgba(6,20,43,.45) 60%,rgba(6,20,43,.2))}
-.slab .in{align-self:end;padding:26px}
+.slab .in{align-self:end;padding:26px;padding-top:150px}
+@media(min-width:900px){.slab .in{padding-top:26px}}
 .slab h3{font-size:clamp(34px,5vw,56px);margin-bottom:10px}
 .slab p{color:#d3deea;max-width:52ch;font-size:16.5px}
 .slab.txt{background:var(--ink2)}
@@ -113,13 +114,13 @@ section{padding:84px 0}
 @media(min-width:900px){.vet .wrap{grid-template-columns:1fr 1fr;width:100%;margin:0}.vet .copy{padding:90px max(40px,calc((100vw - 1240px)/2)) 90px 64px}.vet .pic{min-height:520px}}
 
 /* gallery */
-.gal{display:grid;gap:10px;margin-top:40px;grid-template-columns:1fr 1fr}
+.gal{display:grid;gap:10px;margin-top:40px;grid-template-columns:1fr}
 .gal figure{position:relative;overflow:hidden;border-radius:var(--r);aspect-ratio:1/1;background:var(--ink2)}
 .gal figure img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.16,1,.3,1)}
 .gal figure:hover img{transform:scale(1.05)}
 .gal .tall{grid-row:span 2;aspect-ratio:auto}
 .gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;font-size:14px;font-weight:600;background:linear-gradient(0deg,rgba(6,20,43,.9),transparent)}
-@media(min-width:900px){.gal{grid-template-columns:repeat(4,1fr);grid-auto-rows:240px}.gal figure{aspect-ratio:auto}}
+@media(min-width:900px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:420px}.gal figure{aspect-ratio:auto}}
 
 /* area */
 .area{background:linear-gradient(180deg,var(--ink) 0,var(--ink3) 100%)}
@@ -190,7 +191,7 @@ footer a{text-decoration:none;color:#fff;font-weight:600}
 
 <main id="top">
 <section class="hero" style="padding-bottom:56px">
-  <div class="bg"><img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/02/forest-4081291_1920.jpg" alt="Chainsaw resting on a freshly cut tree stump" fetchpriority="high"></div>
+  <div class="bg"><img src="assets/img-4b790055f3.webp" alt="Climber in a green shirt and helmet, roped into a tree, pruning a high branch" fetchpriority="high"></div>
   <div class="wrap">
     <h1>Tree removal in <em>Indian Trail, NC</em></h1>
     <p class="sub">Veteran-owned, fully insured, and free estimates for homeowners across Union County.</p>
@@ -216,7 +217,7 @@ footer a{text-decoration:none;color:#fff;font-weight:600}
     <p class="lead rv">Whatever is standing, leaning or lying in your yard, we take care of it and protect what is around it.</p>
     <div class="svc">
       <article class="slab s1 rv">
-        <img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/03/20210106_095310_13-768x576.jpg" alt="Tree removal job in Mint Hill, NC" loading="lazy">
+        <img src="assets/img-be69c702ef.webp" alt="Crew member cutting into a tree trunk with a chainsaw while a second crew member stands by, both in orange helmets, Mint Hill, NC" loading="lazy">
         <div class="in">
           <h3>Tree removal</h3>
           <p>Large trees need careful dismantling by trained people with the right machinery. We choose the equipment for your landscape, the branch structure and the soundness of the tree, so your home stays safe.</p>
@@ -224,21 +225,21 @@ footer a{text-decoration:none;color:#fff;font-weight:600}
         </div>
       </article>
       <article class="slab s2 rv">
-        <img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/02/stormdamage-1024x768.jpg" alt="Storm damage cleanup" loading="lazy">
+        <img src="assets/img-52ce600e79.webp" alt="Large pine uprooted and lying across a lawn" loading="lazy">
         <div class="in">
           <h3>Storm damage</h3>
           <p>Nobody plans for an emergency. Our crew is fast, efficient and experienced in storm cleanup, and we work with most insurance companies.</p>
         </div>
       </article>
       <article class="slab s3 rv">
-        <img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/02/118908974_171650507904288_2730696453492518236_o-1024x768.jpg" alt="Stump grinding in Indian Trail, NC" loading="lazy">
+        <img src="assets/img-d08b459c5d.webp" alt="Yellow stump grinder cutting a stump in a yard in Indian Trail, NC" loading="lazy">
         <div class="in">
           <h3>Stump removal</h3>
           <p>We have the right equipment to grind any stump quickly and efficiently, so your lawn looks right again.</p>
         </div>
       </article>
       <article class="slab s4 rv">
-        <img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/02/pruning-3.jpg" alt="Tree pruning in Charlotte, NC" loading="lazy">
+        <img src="assets/img-33782d40a3.webp" alt="Climber roped into a tall bare tree during pruning in Mint Hill, NC" loading="lazy" style="object-position:50% 58%">
         <div class="in">
           <h3>Trimming and pruning</h3>
           <p>Proper pruning improves the health and vigor of your trees and their balance. We thin interfering branches and remove any that endanger pedestrians, traffic or nearby buildings.</p>
@@ -250,7 +251,7 @@ footer a{text-decoration:none;color:#fff;font-weight:600}
 
 <section class="vet" id="veteran">
   <div class="wrap">
-    <div class="pic"><img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/03/dump_photo_1-768x879.jpg" alt="A4ortable crew at work on a tree job" loading="lazy"></div>
+    <div class="pic"><img src="assets/img-6e96dcd023.webp" alt="Tree climber in a harness standing on a branch high in a bare tree" loading="lazy"></div>
     <div class="copy rv">
       <h2 class="h2">Service-disabled veteran-owned.</h2>
       <p class="lead">A4ortable Tree Services is a Service-Disabled Veteran-Owned business in Union County. Our goal is simple: quality results at a reasonable price. Estimates are always free.</p>
@@ -261,14 +262,10 @@ footer a{text-decoration:none;color:#fff;font-weight:600}
 
 <section id="work">
   <div class="wrap">
-    <h2 class="h2 rv">Real jobs. Real yards.</h2>
+    <h2 class="h2 rv">Gear and cleanup.</h2>
     <div class="gal">
-      <figure class="tall rv"><img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/03/tree.2aaa-768x879.jpg" alt="Tree work by A4ortable" loading="lazy"></figure>
-      <figure class="rv"><img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/03/20210302_104037-768x576.jpg" alt="Tree debris cleared after a job" loading="lazy"></figure>
-      <figure class="rv"><img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/03/20200826_100744-768x576.jpg" alt="A tree that fell, ready for cleanup" loading="lazy"></figure>
-      <figure class="tall rv"><img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/03/tree.1aa-768x879.jpg" alt="Tree pruning in Mint Hill" loading="lazy"><figcaption>Pruning, Mint Hill</figcaption></figure>
-      <figure class="rv"><img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/02/118908974_171650507904288_2730696453492518236_o-1024x768.jpg" alt="Stump grinding in Indian Trail" loading="lazy"><figcaption>Stump grinding, Indian Trail</figcaption></figure>
-      <figure class="rv"><img src="https://a4ortabletreeservice.com/wp-content/uploads/2021/03/20210106_095310_13-768x576.jpg" alt="Tree removal in Mint Hill" loading="lazy"><figcaption>Removal, Mint Hill</figcaption></figure>
+      <figure class="rv"><img src="assets/img-e087dea6a5.webp" alt="Orange chainsaw with a face-shield helmet resting on an orange case on a lawn" loading="lazy"><figcaption>Chainsaw and helmet set out before the work</figcaption></figure>
+      <figure class="rv"><img src="assets/img-fe1b062923.webp" alt="Dump trailer tipped up with a load of cut logs and branches" loading="lazy"><figcaption>A trailer loaded with cut logs and branches</figcaption></figure>
     </div>
   </div>
 </section>

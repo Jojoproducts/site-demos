@@ -20,7 +20,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper);overflow-x:hidden;padding-bottom:76px}
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 .wrap{width:min(1240px,100% - 40px);margin-inline:auto}
 h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:.92;letter-spacing:.005em;font-weight:800}
@@ -33,14 +33,14 @@ h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:.92;let
 :focus-visible{outline:3px solid var(--orange);outline-offset:3px}
 
 .demo{background:#0a1a11;color:#e6efe8;font-size:14.5px;padding:9px 0;text-align:center;line-height:1.4}
-.demo a{color:#ffb98a;font-weight:600;text-underline-offset:3px}
+.demo a{color:#ffb98a;font-weight:600;text-underline-offset:3px;display:inline-block;padding:11px 4px}
 
 header.nav{position:sticky;top:0;z-index:50;background:rgba(248,250,246,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
-.brand{font-family:var(--display);font-weight:900;font-size:26px;text-transform:uppercase;text-decoration:none;color:var(--brand);letter-spacing:.01em;line-height:1}
+.brand{display:inline-flex;flex-direction:column;justify-content:center;min-height:44px;font-family:var(--display);font-weight:900;font-size:26px;text-transform:uppercase;text-decoration:none;color:var(--brand);letter-spacing:.01em;line-height:1}
 .brand small{display:block;font:600 11px var(--body);letter-spacing:.18em;color:var(--muted)}
 .nav nav{display:none;gap:30px}
-.nav nav a{text-decoration:none;font-weight:600;font-size:16px;padding:10px 0}
+.nav nav a{text-decoration:none;font-weight:600;font-size:16px;min-height:44px;display:inline-flex;align-items:center}
 .nav nav a:hover{color:var(--brand)}
 .nav-cta{display:none;gap:12px;align-items:center}
 .nav-phone{font-weight:700;text-decoration:none;font-size:18px;min-height:44px;display:inline-flex;align-items:center}
@@ -52,8 +52,8 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(248,250,246,.94);bac
 .hero .sub{font-size:19px;max-width:30ch;margin:20px 0 26px;color:var(--muted)}
 .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
 .hero .ctas .btn{flex:1 1 200px}
-.hero-photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:#9cc;max-height:640px}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:45% 38%}
+.hero-photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:1/1;background:#9cc;max-height:640px}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:58% 45%}
 .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(8,30,18,.45))}
 .rating{position:absolute;left:14px;bottom:14px;z-index:2;background:var(--paper);border-radius:var(--r);padding:12px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 10px 30px rgba(8,30,18,.3)}
 .rating b{font:900 44px/1 var(--display);color:var(--brand)}
@@ -82,10 +82,6 @@ section{padding:72px 0}
 .svc ul{list-style:none;margin-top:18px;display:grid;gap:8px}
 .svc li{padding-left:26px;position:relative;font-weight:500}
 .svc li::before{content:"";position:absolute;left:0;top:.7em;width:14px;height:3px;background:var(--orange)}
-.stump-row{margin-top:40px;display:grid;gap:14px;max-width:760px}
-.stump{border-radius:var(--r);overflow:hidden;position:relative;aspect-ratio:842/690;background:#7a6a40}
-.stump img{position:absolute;width:205.7%;max-width:none;left:-105.7%;top:-38%}
-.stump-cap{font-size:15px;color:var(--muted)}
 
 .values{background:var(--sky);border-block:1px solid var(--line)}
 .values h2{font-size:clamp(40px,8vw,84px);color:var(--forest);max-width:14ch}
@@ -146,6 +142,7 @@ footer a{text-decoration:none;display:inline-flex;min-height:44px;align-items:ce
   .nav nav,.nav-cta{display:flex}
   .hero{padding:48px 0 80px}
   .hero-grid{grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  .hero-photo{aspect-ratio:4/5}
   .facts .wrap{grid-template-columns:repeat(4,1fr)}
   .fact{border-top:0!important;border-left:1px solid rgba(255,255,255,.14);padding:34px 24px}
   .fact:first-child{border-left:0;padding-left:0}
@@ -192,7 +189,7 @@ footer a{text-decoration:none;display:inline-flex;min-height:44px;align-items:ce
       </div>
     </div>
     <div class="hero-photo">
-      <img src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F640ce775b6df0b425ab4432e%2Fgallery%2FMaster%20Tree%20Service%20LLC-2023-08-02T15%3A41%3A00.764Z-1.jpg?alt=media&token=386c919e-0131-4026-903d-12bb64235d9a" alt="A Master Tree Service climber roped into a large hardwood limb above a backyard in North Carolina" width="1200" height="1600" fetchpriority="high">
+      <img src="assets/img-f8649c44ba.webp" alt="A Master Tree Service climber roped into a large hardwood limb above a backyard in North Carolina" width="1200" height="1600" fetchpriority="high">
       <div class="rating">
         <b>4.9</b>
         <span><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>on Google, 36 reviews</span>
@@ -233,10 +230,6 @@ footer a{text-decoration:none;display:inline-flex;min-height:44px;align-items:ce
           <li>Hole refilled with soil</li>
         </ul>
       </div>
-    </div>
-    <div class="stump-row rv">
-      <div class="stump"><img src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F640ce775b6df0b425ab4432e%2Fstock%2FMaster%20Tree%20Service%20LLC-2025-07-29T23%3A19%3A19.108Z-0.webp?alt=media&token=3b4e4af3-3753-4d4b-a086-1f5e7824ba13" alt="Chainsaw resting on a freshly cut tree stump beside a hollow log" loading="lazy" width="1732" height="1731"></div>
-      <p class="stump-cap">Tree and stump removal are what we do, start to finish.</p>
     </div>
   </div>
 </section>
@@ -316,7 +309,7 @@ footer a{text-decoration:none;display:inline-flex;min-height:44px;align-items:ce
 <footer>
   <div class="wrap">
     <div class="foot">
-      <div class="logo-chip"><img src="https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F640ce775b6df0b425ab4432e%2FiconAndLogo%2FMASTREE-SERVICES-LLC-01-1024x725.png?alt=media&token=47c52b27-6e06-498d-b2c9-491a98420f5d" alt="Master Tree Service LLC logo" width="1024" height="725" loading="lazy"></div>
+      <div class="logo-chip"><img src="assets/img-d8c58f8298.webp" alt="Master Tree Service LLC logo" width="1024" height="725" loading="lazy"></div>
       <div>
         <a href="tel:+19198699739">(919) 869-9739</a><br>
         <a href="mailto:mastertreeservice2@gmail.com">mastertreeservice2@gmail.com</a>
