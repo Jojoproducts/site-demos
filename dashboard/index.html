@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lead Dashboard</title>
+<style>
+  :root {
+    --bg: #f6f5f2; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6a66; --line: #e3e1db;
+    --accent: #2f6b3f; --accent-ink: #ffffff; --warn: #9a5b00; --danger: #a33a2c;
+    --s-built: #e7efe9; --s-built-ink: #2f6b3f; --s-sent: #e6eef8; --s-sent-ink: #24558c;
+    --s-reply: #fbf1dc; --s-reply-ink: #8a5a00; --s-done: #1d1d1b; --s-done-ink: #ffffff;
+    --s-no: #efeceb; --s-no-ink: #6b6a66; --s-other: #f1f0ec; --s-other-ink: #6b6a66;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151614; --panel: #1e201d; --ink: #ecebe6; --muted: #a09f99; --line: #33352f;
+      --accent: #7fbf8e; --accent-ink: #10130f;
+      --s-built: #23352a; --s-built-ink: #9fd3ac; --s-sent: #1f2c3d; --s-sent-ink: #9cc2ef;
+      --s-reply: #3a2f17; --s-reply-ink: #f0c873; --s-done: #ecebe6; --s-done-ink: #151614;
+      --s-no: #2a2b28; --s-no-ink: #a09f99; --s-other: #2a2b28; --s-other-ink: #a09f99;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  a { color: var(--accent); }
+  main { max-width: 980px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.5rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 1rem; margin: 0 0 10px; }
+  .sub { color: var(--muted); font-size: .9rem; margin: 0 0 20px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; }
+  .chip { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: 6px 12px; font: inherit; font-size: .9rem; cursor: pointer; min-height: 36px; }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .list { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .row { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; align-items: center; padding: 14px 16px; border-top: 1px solid var(--line); text-decoration: none; color: inherit; }
+  .row:first-child { border-top: 0; }
+  .row:hover { background: color-mix(in srgb, var(--ink) 4%, transparent); }
+  .row .name { font-weight: 600; }
+  .row .meta { color: var(--muted); font-size: .85rem; grid-column: 1; }
+  .badge { display: inline-block; border-radius: 999px; padding: 3px 10px; font-size: .8rem; font-weight: 600; white-space: nowrap; }
+  .b-published { background: var(--s-built); color: var(--s-built-ink); }
+  .b-contacted { background: var(--s-sent); color: var(--s-sent-ink); }
+  .b-replied { background: var(--s-reply); color: var(--s-reply-ink); }
+  .b-finished { background: var(--s-done); color: var(--s-done-ink); }
+  .b-not_interested { background: var(--s-no); color: var(--s-no-ink); }
+  .b-other { background: var(--s-other); color: var(--s-other-ink); }
+  .pending { color: var(--warn); font-size: .8rem; margin-left: 6px; }
+  .back { display: inline-block; margin: 0 0 16px; text-decoration: none; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin: 0 0 16px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 40px; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); font: inherit; font-size: .95rem; text-decoration: none; cursor: pointer; }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .btn:disabled { opacity: .5; cursor: default; }
+  .statusbar { display: flex; flex-wrap: wrap; gap: 8px; }
+  .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; height: 360px; object-fit: cover; object-position: top; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); }
+  .shots img:not([src]) { visibility: hidden; }
+  .shots .noshot { height: 360px; display: grid; place-items: center; border-radius: 8px; border: 1px dashed var(--line); color: var(--muted); font-size: .9rem; }
+  .shots figcaption { color: var(--muted); font-size: .85rem; margin-top: 4px; }
+  ul.tight { margin: 0; padding-left: 20px; }
+  ul.tight li { margin: 2px 0; }
+  dl.kv { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0; }
+  dl.kv dt { color: var(--muted); }
+  dl.kv dd { margin: 0; overflow-wrap: anywhere; }
+  textarea { width: 100%; min-height: 110px; font: inherit; padding: 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+  details summary { cursor: pointer; font-weight: 600; }
+  .history { font-size: .85rem; color: var(--muted); }
+  .history li { margin: 3px 0; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .msg { padding: 10px 12px; border-radius: 8px; background: var(--s-reply); color: var(--s-reply-ink); margin: 0 0 16px; }
+  .err { background: color-mix(in srgb, var(--danger) 14%, transparent); color: var(--danger); }
+  input[type=password] { width: 100%; font: inherit; padding: 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+  @media (max-width: 680px) {
+    .two, .shots { grid-template-columns: 1fr; }
+    .shots img { height: 300px; }
+  }
+</style>
+</head>
+<body>
+<main id="app"><p class="sub">Loading…</p></main>
+<script>
+const OWNER = 'Jojoproducts', REPO = 'site-dashboard-data';
+const API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/`;
+const app = document.getElementById('app');
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+  del(k) { try { localStorage.removeItem(k); } catch {} },
+};
+let data = null, edits = [], filter = 'all';
+const blobs = new Map();
+
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+const fmt = (iso) => iso ? new Date(iso).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+const badgeClass = (s) => ['published', 'contacted', 'replied', 'finished', 'not_interested'].includes(s) ? `b-${s}` : 'b-other';
+
+async function gh(path, { raw = false, method = 'GET', body } = {}) {
+  const res = await fetch(API + path, {
+    method,
+    headers: { Authorization: `Bearer ${store.get('ghToken')}`, Accept: raw ? 'application/vnd.github.raw' : 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' },
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  if (res.status === 401) { store.del('ghToken'); throw new Error('The token was rejected. Paste a new one.'); }
+  if (!res.ok) throw Object.assign(new Error(`GitHub ${res.status} for ${path}`), { status: res.status });
+  return res;
+}
+
+async function load() {
+  data = await (await gh('data.json', { raw: true })).json();
+  edits = [];
+  try {
+    const files = await (await gh('edits')).json();
+    for (const f of files.filter((f) => f.name.endsWith('.json')).sort((a, b) => a.name.localeCompare(b.name))) {
+      edits.push(await (await gh(`edits/${f.name}`, { raw: true })).json());
+    }
+  } catch (e) { if (e.status !== 404) throw e; }
+}
+
+/** A lead with the owner's not-yet-synced edits applied on top. */
+function view(lead) {
+  const v = { ...lead, pendingStatus: false, pendingNotes: false };
+  for (const e of edits.filter((e) => e.id === lead.id)) {
+    if (e.status) { v.status = e.status; v.statusLabel = data.statuses.find((s) => s.status === e.status)?.label ?? e.status; v.pendingStatus = true; }
+    if (typeof e.notes === 'string') { v.notes = e.notes; v.pendingNotes = true; }
+  }
+  return v;
+}
+
+async function saveEdit(edit) {
+  const json = JSON.stringify({ ...edit, at: new Date().toISOString() });
+  const name = `edits/${Date.now()}-${edit.id}.json`;
+  await gh(name, { method: 'PUT', body: { message: `Dashboard edit for #${edit.id}`, content: btoa(unescape(encodeURIComponent(json))) } });
+  edits.push(JSON.parse(json));
+}
+
+async function blobUrl(path) {
+  if (!path) return null;
+  if (!blobs.has(path)) blobs.set(path, URL.createObjectURL(await (await gh(path, { raw: true })).blob()));
+  return blobs.get(path);
+}
+
+function tokenScreen(message) {
+  app.innerHTML = `
+    <h1>Lead dashboard</h1>
+    <p class="sub">The data lives in the private repo <b>${esc(OWNER)}/${esc(REPO)}</b>. Paste a GitHub token that can read and write it. It stays in this browser only.</p>
+    ${message ? `<p class="msg err">${esc(message)}</p>` : ''}
+    <div class="panel">
+      <form id="tok"><label for="t"><b>GitHub token</b></label>
+      <p class="sub" style="margin:4px 0 10px">github.com → Settings → Developer settings → Fine-grained tokens → Generate. Repository access: only <b>${esc(REPO)}</b>. Permissions: Contents → Read and write.</p>
+      <input id="t" type="password" autocomplete="off" required>
+      <p><button class="btn primary">Open dashboard</button></p></form>
+    </div>`;
+  document.getElementById('tok').onsubmit = (e) => { e.preventDefault(); store.set('ghToken', document.getElementById('t').value.trim()); start(); };
+}
+
+function listScreen() {
+  const leads = data.leads.map(view);
+  const counts = Object.fromEntries(data.statuses.map((s) => [s.status, leads.filter((l) => l.status === s.status).length]));
+  const shown = filter === 'all' ? leads : leads.filter((l) => l.status === filter);
+  app.innerHTML = `
+    <h1>Leads</h1>
+    <p class="sub">${leads.length} demo sites · data from ${fmt(data.generatedAt)} ${edits.length ? `· <span class="pending">${edits.length} change(s) waiting for the next sync</span>` : ''}</p>
+    <div class="chips" role="group" aria-label="Filter by status">
+      <button class="chip" data-f="all" aria-pressed="${filter === 'all'}">All ${leads.length}</button>
+      ${data.statuses.map((s) => `<button class="chip" data-f="${s.status}" aria-pressed="${filter === s.status}">${esc(s.label)} ${counts[s.status]}</button>`).join('')}
+    </div>
+    <div class="list">${shown.map((l) => `
+      <a class="row" href="#/lead/${l.id}">
+        <span class="name">${esc(l.name)}</span>
+        <span><span class="badge ${badgeClass(l.status)}">${esc(l.statusLabel)}</span>${l.pendingStatus ? '<span class="pending">pending</span>' : ''}</span>
+        <span class="meta">${esc(l.town)}${l.notes ? ' · has notes' : ''}</span>
+      </a>`).join('') || '<p class="row">Nothing here.</p>'}
+    </div>`;
+  app.querySelectorAll('.chip').forEach((b) => b.onclick = () => { filter = b.dataset.f; listScreen(); });
+}
+
+async function leadScreen(id) {
+  const raw = data.leads.find((l) => l.id === id);
+  if (!raw) { location.hash = '#/'; return; }
+  const l = view(raw);
+  const c = l.contact || {};
+  app.innerHTML = `
+    <a class="back" href="#/">← All leads</a>
+    <h1>${esc(l.name)}</h1>
+    <p class="sub">${esc(l.town)}${l.rating ? ` · ${l.rating}★ on Google (${l.reviews ?? 0})` : ''} · task #${l.id}</p>
+
+    <div class="panel">
+      <h2>Status ${l.pendingStatus ? '<span class="pending">pending sync</span>' : ''}</h2>
+      <div class="statusbar">${data.statuses.map((s) => `<button class="btn" data-s="${s.status}" aria-pressed="${l.status === s.status}">${esc(s.label)}</button>`).join('')}</div>
+      <p id="smsg" class="sub" style="margin:10px 0 0"></p>
+    </div>
+
+    <div class="panel links">
+      ${l.oldSite ? `<a class="btn" href="${esc(l.oldSite)}" target="_blank" rel="noopener">Old site ↗</a>` : ''}
+      ${l.newSite ? `<a class="btn primary" href="${esc(l.newSite)}" target="_blank" rel="noopener">New site ↗</a>` : '<span class="sub">Not published yet</span>'}
+      <button class="btn" id="dl">Download site for the client (.zip)</button>
+    </div>
+
+    <div class="panel"><div class="shots">
+      <figure><img id="oldShot" alt="Their current site on a phone"><figcaption>Current site (phone)</figcaption></figure>
+      <figure><img id="newShot" alt="The new demo on a phone"><figcaption>New site (phone)</figcaption></figure>
+    </div></div>
+
+    <div class="two">
+      <div class="panel"><h2>What the new site improves</h2>
+        <p>${esc(l.demo.summary)}</p>
+        ${l.demo.direction ? `<p class="sub">Design: ${esc(l.demo.direction)}</p>` : ''}
+        ${l.check ? `<p class="sub">Checker: ${l.check.verdict === 'pass' ? 'passed' : 'open problems'}${l.check.lcpMs ? ` · loads in ${(l.check.lcpMs / 1000).toFixed(1)}s on mobile data` : ''}${l.check.pageKb ? ` · ${l.check.pageKb} KB` : ''}</p>` : ''}
+      </div>
+      <div class="panel"><h2>Problems with the current site</h2>
+        ${l.score !== null ? `<p class="sub">Need for a new site: ${l.score}/100</p>` : ''}
+        <p>${esc(l.oldSiteProblems.reason || '')}</p>
+        ${l.oldSiteProblems.weaknesses.length ? `<ul class="tight">${l.oldSiteProblems.weaknesses.map((w) => `<li>${esc(w)}</li>`).join('')}</ul>` : ''}
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="panel"><h2>Contact</h2><dl class="kv">
+        <dt>Reach by</dt><dd>${esc(c.channel || '—')}</dd>
+        ${c.email ? `<dt>Email</dt><dd><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></dd>` : ''}
+        ${c.formUrl ? `<dt>Form</dt><dd><a href="${esc(c.formUrl)}" target="_blank" rel="noopener">${esc(c.formUrl)}</a></dd>` : ''}
+        ${c.phone ? `<dt>Phone</dt><dd><a href="tel:${esc(c.phone)}">${esc(c.phone)}</a></dd>` : ''}
+        ${c.ownerNote ? `<dt>Your note</dt><dd>${esc(c.ownerNote)}</dd>` : ''}
+      </dl></div>
+      <div class="panel"><h2>Notes ${l.pendingNotes ? '<span class="pending">pending sync</span>' : ''}</h2>
+        <textarea id="notes" aria-label="Notes">${esc(l.notes)}</textarea>
+        <p style="margin:8px 0 0"><button class="btn" id="saveNotes">Save notes</button> <span id="nmsg" class="sub"></span></p>
+      </div>
+    </div>
+
+    <div class="panel"><details><summary>Facts used, and what was left out</summary>
+      <div class="two" style="margin-top:10px">
+        <div><h2>Facts used (from their own site)</h2><ul class="tight">${l.demo.factsUsed.map((f) => `<li>${esc(f)}</li>`).join('')}</ul></div>
+        <div><h2>Left out (no real data)</h2><ul class="tight">${l.demo.leftOut.map((f) => `<li>${esc(f)}</li>`).join('')}</ul></div>
+      </div>
+      ${l.exportNotes?.length ? `<h2 style="margin-top:12px">Before going live</h2><ul class="tight">${l.exportNotes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}
+    </details></div>
+
+    <div class="panel"><details><summary>History</summary>
+      <ul class="history">${l.history.slice().reverse().map((h) => `<li>${fmt(h.at)} · ${esc(h.from ?? 'new')} → ${esc(h.to)} · ${esc(h.by)}${h.note ? ` · ${esc(h.note)}` : ''}</li>`).join('')}</ul>
+    </details></div>`;
+
+  app.querySelectorAll('[data-s]').forEach((b) => b.onclick = async () => {
+    if (b.dataset.s === l.status) return;
+    const msg = document.getElementById('smsg');
+    app.querySelectorAll('[data-s]').forEach((x) => x.disabled = true);
+    msg.textContent = 'Saving…';
+    try { await saveEdit({ id: l.id, status: b.dataset.s }); leadScreen(id); }
+    catch (e) { msg.textContent = e.message; app.querySelectorAll('[data-s]').forEach((x) => x.disabled = false); }
+  });
+  document.getElementById('saveNotes').onclick = async () => {
+    const m = document.getElementById('nmsg'); m.textContent = 'Saving…';
+    try { await saveEdit({ id: l.id, notes: document.getElementById('notes').value }); m.textContent = 'Saved. Applied on the next sync.'; }
+    catch (e) { m.textContent = e.message; }
+  };
+  document.getElementById('dl').onclick = async (ev) => {
+    const btn = ev.currentTarget; btn.disabled = true; btn.textContent = 'Preparing…';
+    try {
+      const url = URL.createObjectURL(await (await gh(l.exportZip, { raw: true })).blob());
+      const a = Object.assign(document.createElement('a'), { href: url, download: l.exportZip.split('/').pop() });
+      document.body.appendChild(a); a.click(); a.remove();
+      btn.textContent = 'Downloaded';
+    } catch (e) { btn.textContent = 'Download failed'; }
+    btn.disabled = false;
+  };
+  // Screenshots come from the private repo; the <img> stays hidden until its data arrives.
+  for (const [elId, path] of [['oldShot', l.shots.old], ['newShot', l.shots.new]]) {
+    const img = document.getElementById(elId);
+    const none = () => img.replaceWith(Object.assign(document.createElement('div'), { className: 'noshot', textContent: 'No screenshot' }));
+    if (!path) { none(); continue; }
+    blobUrl(path).then((u) => { if (u) img.src = u; else none(); }).catch(none);
+  }
+}
+
+function route() {
+  const m = location.hash.match(/^#\/lead\/(\d+)/);
+  if (m) leadScreen(Number(m[1])); else listScreen();
+  window.scrollTo(0, 0);
+}
+
+async function start() {
+  if (!store.get('ghToken')) return tokenScreen();
+  app.innerHTML = '<p class="sub">Loading…</p>';
+  try { await load(); } catch (e) { return tokenScreen(e.message); }
+  window.onhashchange = route;
+  route();
+}
+start();
+</script>
+</body>
+</html>
