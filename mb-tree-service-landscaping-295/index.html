@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>MB Tree Service &amp; Landscaping | Tree Service in Clayton, NC</title>
+<meta name="description" content="MB Tree Service &amp; Landscaping in Clayton, North Carolina. Call (984) 310-1212 or request an estimate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b0f0c; --ink2:#121913; --panel:#18211a; --line:#2a372c;
+  --leaf:#3fbf2a; --leaf-d:#2c9a1b; --bone:#eef2ea; --mute:#a9b6a8;
+  --r:4px;
+  --display:'Barlow Condensed','Arial Narrow',sans-serif;
+  --body:'Barlow',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--bone);font:400 17px/1.6 var(--body);overflow-x:hidden;padding-bottom:76px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--leaf);outline-offset:3px}
+
+.banner{background:var(--bone);color:#16200f;font-size:14px;line-height:1.4;padding:9px 16px;text-align:center}
+.banner a{font-weight:600;text-decoration:underline;text-underline-offset:3px;display:inline-block;padding:4px 2px}
+
+header.nav{position:sticky;top:0;z-index:20;background:rgba(11,15,12,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:800 20px/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.brand img{width:44px;height:34px;object-fit:contain}
+.brand span{display:none}
+.nav nav{display:none;gap:28px;font-weight:500;font-size:15px}
+.nav nav a{text-decoration:none;color:var(--mute);padding:12px 0}
+.nav nav a:hover{color:var(--bone)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r);font:700 19px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;white-space:nowrap;transition:transform .2s cubic-bezier(.16,1,.3,1),background .2s}
+.btn:active{transform:translateY(1px) scale(.98)}
+.btn-p{background:var(--leaf);color:#06140a}
+.btn-p:hover{background:#58d444}
+.btn-g{border-color:var(--bone);color:var(--bone)}
+.btn-g:hover{background:var(--bone);color:var(--ink)}
+.btn-sm{min-height:44px;padding:0 18px;font-size:17px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.rings{position:absolute;right:-18vw;top:50%;width:min(900px,120vw);aspect-ratio:1;transform:translateY(-50%);border-radius:50%;
+  background:repeating-radial-gradient(circle at 48% 52%,transparent 0 22px,rgba(63,191,42,.16) 22px 24px,transparent 24px 46px,rgba(63,191,42,.07) 46px 47px);
+  mask-image:radial-gradient(circle,#000 35%,transparent 70%);-webkit-mask-image:radial-gradient(circle,#000 35%,transparent 70%)}
+.hero .wrap{position:relative;display:grid;gap:36px;padding:48px 0 56px}
+.hero h1{font:800 clamp(48px,11vw,96px)/.9 var(--display);text-transform:uppercase;letter-spacing:-.005em}
+.hero h1 em{font-style:normal;color:var(--leaf);display:block}
+.hero p.lead{font-size:19px;max-width:34ch;color:var(--mute);margin-top:22px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.badge{justify-self:center;width:min(340px,78%);filter:drop-shadow(0 24px 40px rgba(0,0,0,.6));animation:float 7s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px) rotate(-1deg)}}
+
+/* rating */
+.rate{background:var(--leaf);color:#06140a}
+.rate .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 22px;padding:20px 0}
+.rate b{font:800 44px/1 var(--display)}
+.rate .stars{letter-spacing:4px;font-size:22px}
+.rate p{font-weight:600}
+
+section{padding:72px 0}
+h2{font:800 clamp(40px,8vw,84px)/.95 var(--display);text-transform:uppercase}
+h2 em{font-style:normal;color:var(--leaf)}
+
+/* services */
+.svc{display:grid;gap:16px;margin-top:40px}
+.panel{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:var(--r);padding:32px 26px 30px;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;background:var(--panel)}
+.panel h3{font:800 clamp(40px,7vw,64px)/.95 var(--display);text-transform:uppercase;position:relative}
+.panel p{color:var(--mute);margin-top:12px;max-width:38ch;position:relative}
+.panel a.more{position:relative;margin-top:18px;font:700 18px var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--leaf);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.panel.tree{background:linear-gradient(160deg,#1d3a1a,#0f1b10 70%)}
+.panel.land{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+.panel.land p{color:#33402f}
+.panel.land a.more{color:var(--leaf-d)}
+.panel .ghost{position:absolute;right:-8px;top:-18px;font:800 190px/1 var(--display);opacity:.08;pointer-events:none}
+.panel svg{position:absolute;right:18px;top:18px;width:96px;height:96px;opacity:.9}
+
+/* area */
+.area{background:var(--ink2);border-block:1px solid var(--line)}
+.area .big{font:800 clamp(80px,24vw,300px)/.82 var(--display);text-transform:uppercase;color:transparent;-webkit-text-stroke:2px var(--leaf);margin:26px 0 22px;letter-spacing:-.01em}
+.area p{max-width:48ch;color:var(--mute);font-size:19px}
+.area .pts{display:grid;gap:10px;margin-top:28px;max-width:520px}
+.pts a,.pts div{display:flex;align-items:center;min-height:52px;padding:0 18px;border:1px solid var(--line);border-radius:var(--r);font-weight:600;text-decoration:none;background:var(--ink);word-break:break-word}
+.pts a:hover{border-color:var(--leaf)}
+.pts small{color:var(--mute);font-weight:500;margin-right:14px;font-size:14px;min-width:56px}
+
+/* form */
+.est .grid{display:grid;gap:36px}
+form{background:var(--bone);color:var(--ink);padding:28px 22px;border-radius:var(--r);display:grid;gap:18px}
+label{display:grid;gap:7px;font-weight:600;font-size:16px}
+input,select,textarea{font:400 17px var(--body);min-height:50px;padding:12px 14px;border:2px solid #7c8a78;border-radius:var(--r);background:#fff;color:var(--ink);width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--leaf);border-color:var(--ink)}
+form .btn{width:100%;font-size:21px;min-height:58px}
+form .note{font-size:15px;color:#3b4738}
+.est .direct a{display:block;font:800 clamp(34px,7vw,56px)/1.1 var(--display);text-decoration:none;color:var(--leaf);margin:14px 0 4px;overflow-wrap:anywhere}
+.est .direct p{color:var(--mute)}
+.est .direct .mail{font-size:clamp(22px,4.6vw,32px);color:var(--bone);text-decoration:underline;text-underline-offset:5px}
+
+footer{border-top:1px solid var(--line);padding:36px 0 40px;color:var(--mute);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+footer img{width:90px}
+
+.sticky{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(11,15,12,.96);border-top:1px solid var(--line)}
+.sticky .btn{min-height:52px;padding:0 10px}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .badge{animation:none}
+  html{scroll-behavior:auto}
+}
+
+@media(min-width:760px){
+  body{padding-bottom:0}
+  .sticky{display:none}
+  .brand span{display:inline}
+  .nav nav{display:flex}
+  .hero .wrap{grid-template-columns:1.7fr 1fr;align-items:center;padding:72px 0 80px}
+  .badge{width:100%;max-width:400px}
+  section{padding:110px 0}
+  .svc{grid-template-columns:1.25fr 1fr}
+  .panel{min-height:420px;padding:40px}
+  .est .grid{grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  form{padding:36px}
+  .area .pts{grid-template-columns:1fr 1fr;max-width:none}
+}
+@media(max-width:380px){.btn{padding:0 18px}}
+</style>
+</head>
+<body>
+
+<div class="banner">Website concept prepared for MB Tree Service &amp; Landscaping. Not the official site. <a href="http://mbtreeservices.com/" target="_blank" rel="noopener">See the current site (mbtreeservices.com)</a></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="https://mbtreeservices.com/wp-content/uploads/2026/07/MBtreeslogo-1.webp" alt="MB Tree Service and Landscaping logo"><span>MB Tree Service</span></a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#area">Service area</a>
+      <a href="#estimate">Contact</a>
+    </nav>
+    <a class="btn btn-p btn-sm" href="tel:+19843101212">Call (984) 310-1212</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="rings" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <h1>Tree Service <em>in Clayton, NC</em></h1>
+      <p class="lead">MB Tree Service &amp; Landscaping. Call us, or send the details and get an estimate.</p>
+      <div class="cta">
+        <a class="btn btn-p" href="tel:+19843101212">Call Now</a>
+        <a class="btn btn-g" href="#estimate">Request an Estimate</a>
+      </div>
+    </div>
+    <img class="badge" src="https://mbtreeservices.com/wp-content/uploads/2026/07/MBtreeslogo-1.webp" alt="MB Tree Service and Landscaping badge with a climber in a tree between two chainsaws" width="942" height="721">
+  </div>
+</div>
+
+<div class="rate">
+  <div class="wrap">
+    <b>5.0</b>
+    <span class="stars" aria-hidden="true">★★★★★</span>
+    <p>on Google, from 4 reviews</p>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2 class="rv">Trees up. <em>Yards sorted.</em></h2>
+    <div class="svc">
+      <article class="panel tree rv">
+        <span class="ghost" aria-hidden="true">T</span>
+        <h3>Tree<br>Service</h3>
+        <p>Trees that are dead, leaning or in the way, handled by a local crew. Tell us what you are looking at and we will come take a look.</p>
+        <a class="more" href="#estimate">Get an estimate</a>
+      </article>
+      <article class="panel land rv">
+        <span class="ghost" aria-hidden="true">L</span>
+        <h3>Land&shy;scaping</h3>
+        <p>Once the trees are dealt with, we can look after the yard around them.</p>
+        <a class="more" href="#estimate">Ask about your yard</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <h2 class="rv">Local to <em>Clayton</em></h2>
+    <div class="big rv" aria-hidden="true">Clayton</div>
+    <p class="rv">MB Tree Service &amp; Landscaping works out of Clayton, North Carolina. Call to check that we cover your address.</p>
+    <div class="pts rv">
+      <a href="tel:+19843101212"><small>Phone</small>(984) 310-1212</a>
+      <a href="mailto:info@mbtreeservices.com"><small>Email</small>info@mbtreeservices.com</a>
+    </div>
+  </div>
+</section>
+
+<section class="est" id="estimate">
+  <div class="wrap grid">
+    <div class="direct rv">
+      <h2>Request an <em>estimate</em></h2>
+      <p style="margin-top:20px;font-size:19px;max-width:36ch">Send a few details, or skip the form and call.</p>
+      <a href="tel:+19843101212">(984) 310-1212</a>
+      <a class="mail" href="mailto:info@mbtreeservices.com">info@mbtreeservices.com</a>
+    </div>
+    <form class="rv" onsubmit="event.preventDefault(); alert('Demo form: in the real site this sends your request to MB Tree Service & Landscaping.')">
+      <label>Name<input name="name" autocomplete="name" required></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Address or neighbourhood<input name="address" autocomplete="street-address"></label>
+      <label>What do you need?
+        <select name="service">
+          <option>Tree service</option>
+          <option>Landscaping</option>
+          <option>Both</option>
+          <option>Not sure yet</option>
+        </select>
+      </label>
+      <label>Tell us about the job<textarea name="details"></textarea></label>
+      <button class="btn btn-p" type="submit">Request Estimate</button>
+      <p class="note">Prefer to talk? Call (984) 310-1212.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="https://mbtreeservices.com/wp-content/uploads/2026/07/MBtreeslogo-1.webp" alt="MB Tree Service and Landscaping logo" loading="lazy">
+    <div>MB Tree Service &amp; Landscaping, LLC<br>Clayton, North Carolina</div>
+    <div><a href="tel:+19843101212">(984) 310-1212</a><br><a href="mailto:info@mbtreeservices.com">info@mbtreeservices.com</a></div>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="btn btn-p" href="tel:+19843101212">Call Now</a>
+  <a class="btn btn-g" href="#estimate">Request an Estimate</a>
+</div>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
