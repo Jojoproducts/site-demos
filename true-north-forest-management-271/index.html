@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="demo-build" content="v1-1791743395585">
+<meta name="demo-build" content="v2-1791759135584">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
@@ -81,6 +81,11 @@ section{padding:72px 0}
 .chips{list-style:none;padding:0;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
 .chips li{background:#fff;border:1px solid var(--mist-2);border-radius:var(--r);padding:9px 14px;font-weight:500;font-size:15.5px}
 
+/* atmosphere bands */
+.band{height:200px;background-size:cover;background-position:center;background-color:var(--pine-2)}
+.timber-bg{position:absolute;inset:0;background:linear-gradient(rgba(23,58,40,.88),rgba(23,58,40,.88)),url(assets/img-f58baa96e8.webp) center/cover}
+.timber .wrap{position:relative}
+
 /* timber */
 .timber{background:var(--pine-2);color:var(--mist);position:relative;overflow:hidden}
 .timber .wrap{display:grid;gap:32px}
@@ -149,6 +154,7 @@ footer a{color:var(--mist)}
   .services-grid{grid-template-columns:repeat(3,1fr);gap:40px}
   .group:nth-child(2){margin-top:48px}
   .group:nth-child(3){margin-top:96px}
+  .band{height:300px}
   .timber .wrap{grid-template-columns:1fr 1fr;gap:72px}
   .timber .cols{grid-column:2;grid-row:1 / span 2}
   .badge-row{grid-column:1}
@@ -253,7 +259,10 @@ footer a{color:var(--mist)}
   </div>
 </section>
 
+<div class="band" role="presentation" style="background-image:url(assets/img-c50b97cd3c.webp)"></div>
+
 <section class="timber" id="timber">
+  <div class="timber-bg" aria-hidden="true"></div>
   <div class="wrap">
     <h2 class="reveal">Get the best price for your <em>timber</em></h2>
     <div class="cols reveal">
@@ -284,6 +293,8 @@ footer a{color:var(--mist)}
     </div>
   </div>
 </section>
+
+<div class="band" role="presentation" style="background-image:url(assets/img-9af6abff8a.webp)"></div>
 
 <section class="contact" id="contact">
   <div class="wrap">
