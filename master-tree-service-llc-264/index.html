@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="demo-build" content="v2-1791740669895">
+<meta name="demo-build" content="v3-1791756204041">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
@@ -84,7 +84,10 @@ section{padding:72px 0}
 .svc li{padding-left:26px;position:relative;font-weight:500}
 .svc li::before{content:"";position:absolute;left:0;top:.7em;width:14px;height:3px;background:var(--orange)}
 
-.values{background:var(--sky);border-block:1px solid var(--line)}
+.values{background:linear-gradient(rgba(238,244,239,.9),rgba(238,244,239,.9)),url(assets/img-6852b37e62.webp) center/cover;border-block:1px solid var(--line)}
+.band{height:clamp(150px,26vw,300px);background:var(--forest) center/cover no-repeat}
+.band.b1{background-image:url(assets/img-133733e893.webp);background-position:center 40%}
+.band.b2{background-image:url(assets/img-f58baa96e8.webp);background-position:center 55%}
 .values h2{font-size:clamp(40px,8vw,84px);color:var(--forest);max-width:14ch}
 .vals{margin-top:36px;display:grid}
 .val{padding:22px 0;border-top:2px solid var(--forest);display:flex;gap:18px;align-items:baseline;justify-content:space-between}
@@ -208,6 +211,8 @@ footer a{text-decoration:none;display:inline-flex;min-height:44px;align-items:ce
   </div>
 </div>
 
+<div class="band b1" role="presentation"></div>
+
 <section id="services">
   <div class="wrap">
     <h2 class="sec-h rv">Down safely. Gone completely.</h2>
@@ -271,6 +276,8 @@ footer a{text-decoration:none;display:inline-flex;min-height:44px;align-items:ce
     </div>
   </div>
 </section>
+
+<div class="band b2" role="presentation"></div>
 
 <section class="contact" id="estimate">
   <div class="wrap contact-grid">
