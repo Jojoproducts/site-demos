@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="demo-build" content="v2-1791743206754">
+<meta name="demo-build" content="v3-1791755890786">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
@@ -79,6 +79,13 @@ h2{font:800 clamp(40px,8vw,76px)/.95 var(--disp);text-transform:uppercase;color:
 .svc.light p{color:var(--text)}
 .svc.amber{background:var(--amber);color:#1a1200}
 .svc.amber p{color:#1a1200}
+
+/* atmosphere strips */
+.strip{height:180px;background:var(--forest) center/cover no-repeat}
+.strip.a{background-image:linear-gradient(#0f1a0a33,#0f1a0a33),url(assets/img-9af6abff8a.webp)}
+.strip.b{background-image:linear-gradient(#0f1a0a33,#0f1a0a33),url(assets/img-6852b37e62.webp)}
+.clean.bg{background:linear-gradient(#0f1a0ae6,#0f1a0ae0),url(assets/img-f58baa96e8.webp) center/cover no-repeat}
+@media(min-width:768px){.strip{height:260px}}
 
 /* clean promise */
 .clean{background:var(--ink);color:var(--bone)}
@@ -228,7 +235,9 @@ footer a{color:var(--bone)}
   </div>
 </section>
 
-<section id="promise" class="clean">
+<div class="strip a" role="presentation"></div>
+
+<section id="promise" class="clean bg">
   <div class="wrap">
     <h2 class="rv">Like nothing <em>ever happened.</em></h2>
     <div class="cols">
@@ -254,6 +263,8 @@ footer a{color:var(--bone)}
     </div>
   </div>
 </section>
+
+<div class="strip b" role="presentation"></div>
 
 <section id="estimate" class="quote">
   <div class="wrap cols">
