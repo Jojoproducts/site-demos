@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="demo-build" content="v1-1791743395585">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>True North Forest Management Services | Forestry in Holly Springs, NC</title>
+<meta name="description" content="Forest management plans, timber sales and appraisal, longleaf pine restoration and prescribed burning for landowners in Holly Springs, NC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pine:#10291b;
+  --pine-2:#173a28;
+  --moss:#2f7a37;
+  --leaf:#3f9c2d;
+  --mist:#eef3ec;
+  --mist-2:#dfe9dc;
+  --ink:#14211a;
+  --ink-soft:#4a5a50;
+  --acorn:#e0a030;
+  --acorn-ink:#2a1b00;
+  --r:6px;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Geist",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--ink);background:var(--mist);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.02;letter-spacing:-.02em;font-weight:800}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--acorn);outline-offset:3px}
+
+/* banner */
+.banner{background:var(--acorn);color:var(--acorn-ink);font-size:14.5px;line-height:1.4;padding:9px 0;text-align:center;font-weight:500}
+.banner a{font-weight:600;text-underline-offset:3px}
+
+/* header */
+header.top{background:var(--mist);border-bottom:1px solid var(--mist-2)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.brand img{height:44px;width:auto}
+.top nav{display:none;gap:28px;font-weight:500;font-size:15.5px}
+.top nav a{text-decoration:none;padding:10px 0}
+.top nav a:hover{color:var(--moss)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:var(--r);font-family:var(--body);font-weight:600;font-size:16.5px;text-decoration:none;border:2px solid transparent;cursor:pointer;white-space:nowrap;transition:transform .2s cubic-bezier(.16,1,.3,1),background .2s}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn-primary{background:var(--acorn);color:var(--acorn-ink)}
+.btn-primary:hover{background:#eab04a}
+.btn-line{border-color:var(--pine);color:var(--pine);background:transparent}
+.btn-line:hover{background:var(--pine);color:var(--mist)}
+.btn-line.on-dark{border-color:rgba(238,243,236,.6);color:var(--mist)}
+.btn-line.on-dark:hover{background:var(--mist);color:var(--pine)}
+.top .btn{min-height:46px;padding:0 18px;font-size:15.5px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--pine);color:var(--mist)}
+.contours{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none}
+.hero .wrap{position:relative;display:grid;gap:36px;padding:44px 0 56px}
+.hero h1{font-size:clamp(2.6rem,9.5vw,5.4rem);max-width:12ch}
+.hero h1 em{font-style:normal;color:var(--acorn)}
+.hero p.lead{margin-top:20px;max-width:34ch;font-size:1.15rem;color:#c9d9cb}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-photo{position:relative;margin:0}
+.hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r) var(--r) 220px 220px;filter:saturate(1.08) contrast(1.04)}
+.compass{position:absolute;right:-6px;bottom:-14px;width:96px;height:96px;background:var(--pine);border-radius:50%;padding:6px}
+.hero-photo figcaption{margin-top:12px;padding-right:110px;font-size:14.5px;color:#a9bfae}
+
+/* services */
+section{padding:72px 0}
+.sec-head h2{font-size:clamp(2rem,6vw,3.4rem);max-width:16ch}
+.sec-head p{margin-top:16px;max-width:56ch;color:var(--ink-soft)}
+.services-grid{margin-top:44px;display:grid;gap:0}
+.group{padding:30px 0;border-top:2px solid var(--pine)}
+.group h3{font-size:1.7rem;display:flex;align-items:baseline;gap:12px}
+.group h3 small{font-family:var(--body);font-weight:500;font-size:.95rem;color:var(--ink-soft);letter-spacing:0}
+.group p{margin-top:10px;color:var(--ink-soft);max-width:44ch}
+.chips{list-style:none;padding:0;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{background:#fff;border:1px solid var(--mist-2);border-radius:var(--r);padding:9px 14px;font-weight:500;font-size:15.5px}
+
+/* timber */
+.timber{background:var(--pine-2);color:var(--mist);position:relative;overflow:hidden}
+.timber .wrap{display:grid;gap:32px}
+.timber h2{font-size:clamp(2rem,6.4vw,3.8rem);max-width:15ch}
+.timber h2 em{font-style:normal;color:var(--acorn)}
+.timber .cols{display:grid;gap:20px;color:#cfdccf}
+.badge-row{margin-top:8px;display:grid;gap:14px}
+.fact{border-left:4px solid var(--acorn);padding:4px 0 4px 16px}
+.fact strong{display:block;font-family:var(--display);font-size:1.3rem;color:var(--mist)}
+.fact span{color:#b9cbbb;font-size:15.5px}
+
+/* land */
+.land .wrap{display:grid;gap:36px}
+.land-list{display:grid;gap:28px}
+.land-item{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+.land-item .n{width:46px;height:46px;border-radius:50%;background:var(--pine);color:var(--acorn);display:grid;place-items:center;font-family:var(--display);font-weight:800}
+.land-item h3{font-size:1.4rem}
+.land-item p{margin-top:6px;color:var(--ink-soft);max-width:52ch}
+blockquote{margin-top:12px;background:var(--moss);color:#fff;border-radius:var(--r);padding:28px;font-family:var(--display);font-weight:700;font-size:clamp(1.4rem,4.4vw,2rem);line-height:1.15;letter-spacing:-.01em}
+blockquote cite{display:block;margin-top:14px;font-family:var(--body);font-style:normal;font-weight:500;font-size:15px;color:#d6efd2}
+
+/* contact */
+.contact{background:var(--mist-2)}
+.contact .wrap{display:grid;gap:40px}
+.contact h2{font-size:clamp(2rem,6vw,3.4rem);max-width:13ch}
+.phones{margin-top:26px;display:grid;gap:10px}
+.phones a.big{font-family:var(--display);font-weight:800;font-size:clamp(1.9rem,6vw,2.7rem);text-decoration:none;color:var(--pine);letter-spacing:-.02em;display:inline-block;padding:4px 0}
+.phones .alt{font-size:16px;color:var(--ink-soft)}
+.phones .alt a{font-weight:600;color:var(--ink)}
+.meta{margin-top:22px;display:grid;gap:6px;color:var(--ink-soft);font-size:16px}
+form{background:#fff;border-radius:var(--r);padding:26px;display:grid;gap:18px;border:1px solid #c8d6c5}
+label{display:grid;gap:7px;font-weight:600;font-size:15.5px}
+input,select,textarea{font:inherit;font-weight:400;color:var(--ink);background:#fff;border:1.5px solid #6f8274;border-radius:var(--r);padding:12px 14px;min-height:48px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--acorn);outline-offset:1px;border-color:var(--pine)}
+.help{font-size:14.5px;color:var(--ink-soft);font-weight:400}
+form .btn{width:100%}
+
+footer{background:var(--pine);color:#b9cbbb;padding:40px 0 110px;font-size:15.5px}
+footer .wrap{display:grid;gap:14px}
+footer img{height:40px;width:auto;background:var(--mist);padding:6px 10px;border-radius:var(--r)}
+footer a{color:var(--mist)}
+
+/* sticky mobile bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--pine);box-shadow:0 -8px 24px rgba(10,25,16,.3)}
+.sticky .btn{min-height:50px;padding:0 10px}
+
+/* motion */
+@media (prefers-reduced-motion:no-preference){
+  .rise{opacity:0;transform:translateY(22px);animation:rise .8s cubic-bezier(.16,1,.3,1) forwards}
+  .rise.d1{animation-delay:.08s}.rise.d2{animation-delay:.18s}.rise.d3{animation-delay:.3s}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .needle{transform-origin:50% 50%;animation:swing 3.2s cubic-bezier(.16,1,.3,1) .6s both}
+  @keyframes swing{0%{transform:rotate(-70deg)}60%{transform:rotate(10deg)}100%{transform:rotate(0)}}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+  .reveal.in{opacity:1;transform:none}
+}
+
+@media (min-width:860px){
+  .top nav{display:flex}
+  .brand img{height:52px}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center;gap:64px;padding:64px 0 72px}
+  .hero-photo img{aspect-ratio:3/4}
+  .compass{width:130px;height:130px;right:-24px;bottom:-24px}
+  section{padding:104px 0}
+  .services-grid{grid-template-columns:repeat(3,1fr);gap:40px}
+  .group:nth-child(2){margin-top:48px}
+  .group:nth-child(3){margin-top:96px}
+  .timber .wrap{grid-template-columns:1fr 1fr;gap:72px}
+  .timber .cols{grid-column:2;grid-row:1 / span 2}
+  .badge-row{grid-column:1}
+  .land .wrap{grid-template-columns:.9fr 1.1fr;gap:80px}
+  .contact .wrap{grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  form{padding:34px}
+  .sticky{display:none}
+  footer{padding-bottom:40px}
+  footer .wrap{grid-template-columns:1fr auto;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<div class="banner">Website concept prepared for True North Forest Management. Not the official site. <a href="http://www.truenorthforestry.biz/" target="_blank" rel="noopener">See the current site (truenorthforestry.biz)</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="True North Forest Management Services"><img src="assets/img-594f3f1027.webp" alt="True North Forest Management Services logo with compass and acorn" width="220" height="44"></a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#timber">Timber sales</a>
+      <a href="#land">Your land</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="tel:+19198153468">Call (919) 815-3468</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <svg class="contours" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="#2f6a3e" stroke-width="1.2">
+    <path d="M-20 520C150 470 260 560 430 500S700 380 900 430 1150 380 1230 330"/>
+    <path d="M-20 470C160 420 270 510 440 450S710 330 910 380 1150 330 1230 280"/>
+    <path d="M-20 420C170 370 280 460 450 400S720 280 920 330 1150 280 1230 230"/>
+    <path d="M-20 370C180 320 290 410 460 350S730 230 930 280 1150 230 1230 180"/>
+    <path d="M-20 320C190 270 300 360 470 300S740 180 940 230 1150 180 1230 130"/>
+    <path d="M-20 570C140 520 250 610 420 550S690 430 890 480 1150 430 1230 380"/>
+    <path d="M-20 620C130 570 240 660 410 600S680 480 880 530 1150 480 1230 430"/>
+  </svg>
+  <div class="wrap">
+    <div>
+      <h1 class="rise">Forestry in <em>Holly Springs,</em> NC</h1>
+      <p class="lead rise d1">Forest management plans, timber sales and honest guidance for landowners.</p>
+      <div class="cta-row rise d2">
+        <a class="btn btn-primary" href="tel:+19198153468">Call (919) 815-3468</a>
+        <a class="btn btn-line on-dark" href="#contact">Request an estimate</a>
+      </div>
+    </div>
+    <figure class="hero-photo rise d3">
+      <img src="assets/img-3898c900ce.webp" alt="Tall pine trunks rising from sunlit grass in an open pine woodland" width="496" height="359" fetchpriority="high">
+      <svg class="compass" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#3f9c2d" stroke-width="4"/>
+        <circle cx="50" cy="50" r="34" fill="none" stroke="#2f6a3e" stroke-width="1"/>
+        <g class="needle"><path d="M50 14L58 50L50 86L42 50Z" fill="#14211a" opacity=".0"/><path d="M50 14L58 50H42Z" fill="#e0a030"/><path d="M50 86L58 50H42Z" fill="#9db8a0"/></g>
+        <circle cx="50" cy="50" r="3.5" fill="#eef3ec"/>
+      </svg>
+      <figcaption>Pine woodland. Managed for the long run.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Everything your timberland needs</h2>
+      <p>True North covers the full path: a plan, a fair appraisal, a well-run harvest, and the work that keeps the land healthy afterward.</p>
+    </div>
+    <div class="services-grid">
+      <div class="group reveal">
+        <h3>Plan &amp; appraise</h3>
+        <p>Know what you own and what it is worth before any decision.</p>
+        <ul class="chips">
+          <li>Forest Management Planning</li>
+          <li>Timber Inventory &amp; Appraisal</li>
+          <li>Boundary Line Maintenance</li>
+          <li>Forest Taxation</li>
+        </ul>
+      </div>
+      <div class="group reveal">
+        <h3>Grow &amp; restore</h3>
+        <p>Hands-on management for healthier stands and richer habitat.</p>
+        <ul class="chips">
+          <li>Pine Management</li>
+          <li>Longleaf Pine Restoration</li>
+          <li>Hardwood Management</li>
+          <li>Wildlife Management</li>
+          <li>Prescribed Burning</li>
+        </ul>
+      </div>
+      <div class="group reveal">
+        <h3>Sell &amp; enjoy</h3>
+        <p>Get a fair price, then shape the land around how you use it.</p>
+        <ul class="chips">
+          <li>Timber Sales &amp; Administration</li>
+          <li>Cost Share Assistance</li>
+          <li>Recreational Trail Enhancements</li>
+          <li>Forest Aesthetics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="timber" id="timber">
+  <div class="wrap">
+    <h2 class="reveal">Get the best price for your <em>timber</em></h2>
+    <div class="cols reveal">
+      <p>Obtaining a fair price for your timber is the most important phase of your entire forest management program. The average landowner makes only one or two timber sales in a lifetime, so few develop a clear understanding of how timber marketing works.</p>
+      <p>There is a lot at stake when a tract is harvested. True North's expertise helps maximize your income and protect your interests.</p>
+    </div>
+    <div class="badge-row reveal">
+      <div class="fact"><strong>Certified Forester</strong><span>Credential shown on the True North website.</span></div>
+      <div class="fact"><strong>No obligation first inspection</strong><span>Call to set up a first look at your timberlands.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="land" id="land">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>A long-term relationship with your land</h2>
+      <p>As a symbol, True North stands for a focused approach and personalized professional service, guiding clients along a successful path of wise forest management.</p>
+      <blockquote>
+        "There are lots of folks out there that want to help you accomplish your objectives, let them!"
+        <cite>A Tree Farmer, quoted on the True North website</cite>
+      </blockquote>
+    </div>
+    <div class="land-list">
+      <div class="land-item reveal"><span class="n">1</span><div><h3>Trails built into the harvest</h3><p>Trails for hiking, horseback riding, ATV riding or mountain biking can be designed around a property's natural features, often built during a timber harvest, with access to specialized equipment for roads.</p></div></div>
+      <div class="land-item reveal"><span class="n">2</span><div><h3>Beauty planned in</h3><p>Harvests can be designed to limit visual impact with buffers and clean-up, and scenic vistas can be opened where dense forest hides a view.</p></div></div>
+      <div class="land-item reveal"><span class="n">3</span><div><h3>Your objectives first</h3><p>A reliable professional source for forestry services and sound management information can have an enormous impact on whether you reach your ownership objectives.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2 class="reveal">Let's walk your land</h2>
+      <div class="phones reveal">
+        <a class="big" href="tel:+19198153468">(919) 815-3468</a>
+        <p class="alt">Also listed: <a href="tel:+19195524109">(919) 552-4109</a></p>
+      </div>
+      <div class="meta reveal">
+        <span>True North Forest Management Services, Holly Springs, NC 27540</span>
+        <span>Rated 4.0 on Google (1 review)</span>
+      </div>
+    </div>
+    <form class="reveal" onsubmit="event.preventDefault(); alert('Demo form: in the real site this sends your request to True North Forest Management.')">
+      <label>Your name
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label>Phone
+        <input type="tel" name="phone" autocomplete="tel" required>
+      </label>
+      <label>What do you need?
+        <select name="need">
+          <option>Forest management plan</option>
+          <option>Timber appraisal or sale</option>
+          <option>Pine or longleaf restoration</option>
+          <option>Prescribed burning</option>
+          <option>Wildlife or hardwood management</option>
+          <option>Trails or aesthetics</option>
+          <option>Not sure yet</option>
+        </select>
+      </label>
+      <label>About your property
+        <textarea name="details"></textarea>
+        <span class="help">Location and rough acreage help, if you know them.</span>
+      </label>
+      <button class="btn btn-primary" type="submit">Request an estimate</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="assets/img-594f3f1027.webp" alt="True North Forest Management Services" width="200" height="40">
+      <p style="margin-top:12px">Helping you manage your natural resource responsibly. Holly Springs, NC.</p>
+    </div>
+    <p><a href="tel:+19198153468">(919) 815-3468</a></p>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="btn btn-primary" href="tel:+19198153468">Call now</a>
+  <a class="btn btn-line on-dark" href="#contact">Get estimate</a>
+</div>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+<script>(function(){try{var u=new URL(location.href);if(u.searchParams.has('hf')){localStorage.setItem('hf-owner','1');u.searchParams.delete('hf');history.replaceState(null,'',u.pathname+u.search+u.hash);}if(localStorage.getItem('hf-owner'))return;}catch(e){}if(navigator.webdriver||!navigator.sendBeacon)return;var sent=false,t;function go(){if(sent||document.visibilityState!=='visible')return;sent=true;navigator.sendBeacon('https://app.highfieldhq.com/api/view',new Blob(['true-north-forest-management-271'],{type:'text/plain'}));}function arm(){clearTimeout(t);if(document.visibilityState==='visible')t=setTimeout(go,4000);}document.addEventListener('visibilitychange',arm);arm();})();</script>
+</body>
+</html>
