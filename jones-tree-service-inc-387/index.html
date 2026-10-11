@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="demo-build" content="v1-1791756015826">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Jones Tree Service | Tree Removal in Peachtree City, GA</title>
+<meta name="description" content="Tree removal, pruning, stump grinding and 24 hour storm damage service for Fayette and Coweta counties, GA. Established 1978. Call (770) 487-5324.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#12150f; --bg2:#1a1f16; --bg3:#232a1d;
+  --ink:#f1ede3; --mute:#b9b8a9; --line:rgba(241,237,227,.16);
+  --or:#f7941f; --or-d:#cc6600; --on-or:#1a1206;
+  --r:3px;
+  --disp:'Barlow Condensed','Arial Narrow',sans-serif;
+  --body:'Barlow',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased;padding-bottom:76px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--disp);font-weight:800;text-transform:uppercase;line-height:.95;letter-spacing:.005em}
+h2{font-size:clamp(2.4rem,6vw,4.4rem)}
+p{max-width:62ch}
+:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+
+.banner{background:var(--or);color:var(--on-or);font-size:15px;line-height:1.35;padding:9px 20px;text-align:center;font-weight:500}
+.banner a{font-weight:600;text-underline-offset:3px}
+
+header.nav{position:sticky;top:0;z-index:50;background:rgba(18,21,15,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{font-family:var(--disp);font-weight:800;font-size:1.55rem;text-transform:uppercase;text-decoration:none;letter-spacing:.02em;white-space:nowrap}
+.brand b{color:var(--or);font-weight:800}
+.nav ul{display:none;list-style:none;gap:28px}
+.nav ul a{text-decoration:none;font-weight:500;color:var(--mute);min-height:44px;display:inline-flex;align-items:center}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:var(--r);font-family:var(--disp);font-weight:800;font-size:1.25rem;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;border:2px solid var(--or);white-space:nowrap;transition:transform .2s cubic-bezier(.16,1,.3,1),background .2s,color .2s;cursor:pointer}
+.btn:active{transform:translateY(1px) scale(.98)}
+.btn.p{background:var(--or);color:var(--on-or)}
+.btn.p:hover{background:#ffab45}
+.btn.g{background:rgba(18,21,15,.55);color:var(--ink);border-color:var(--ink)}
+.btn.g:hover{background:var(--ink);color:var(--bg)}
+.dn{display:none}
+@media (min-width:480px){.dn{display:inline}}
+.nav .btn{min-height:44px;font-size:1.1rem;padding:0 18px}
+
+/* hero */
+.hero{position:relative;min-height:calc(100dvh - 110px);display:flex;align-items:center;isolation:isolate;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url('assets/img-9af6abff8a.webp') center/cover;filter:saturate(.7) brightness(.55)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(18,21,15,.95) 0%,rgba(18,21,15,.72) 55%,rgba(18,21,15,.35) 100%),linear-gradient(0deg,var(--bg) 0%,transparent 30%)}
+.hero .wrap{padding:56px 0 72px}
+.hero h1{font-size:clamp(3.4rem,12.5vw,9rem);max-width:12ch}
+.hero h1 em{font-style:normal;color:var(--or);display:block}
+.hero .sub{margin-top:22px;font-size:clamp(1.1rem,2.2vw,1.35rem);color:var(--ink);max-width:34ch}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .where{font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--or);font-size:1.05rem;margin-bottom:18px}
+
+/* proof strip */
+.proof{background:var(--bg2);border-block:1px solid var(--line)}
+.proof .wrap{display:grid;grid-template-columns:1fr 1fr}
+.proof div.i{padding:26px 14px 26px 0;border-bottom:1px solid var(--line)}
+.proof div.i:nth-child(odd){border-right:1px solid var(--line);padding-right:14px}
+.proof div.i:nth-child(even){padding-left:18px}
+.proof div.i:nth-last-child(-n+2){border-bottom:0}
+.proof .n{font-family:var(--disp);font-weight:800;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1;color:var(--or)}
+.proof .l{color:var(--mute);font-size:15px;line-height:1.35;margin-top:6px}
+
+/* services */
+.services{padding:96px 0}
+.services .head{max-width:760px;margin-bottom:48px}
+.services .head p{margin-top:18px;color:var(--mute)}
+.sgrid{display:grid;gap:14px;grid-template-columns:1fr}
+.s{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:28px;position:relative;overflow:hidden;transition:border-color .25s,transform .35s cubic-bezier(.16,1,.3,1)}
+.s:hover{border-color:var(--or);transform:translateY(-3px)}
+.s h3{font-size:clamp(1.9rem,3.6vw,2.6rem);margin-bottom:10px}
+.s p{color:var(--mute);font-size:16px}
+.s.big{background:var(--or);color:var(--on-or);border-color:var(--or)}
+.s.big p{color:#3a2508;font-size:17px}
+.s.big h3{font-size:clamp(2.6rem,6vw,4.6rem)}
+.s.tex{background:linear-gradient(rgba(18,21,15,.78),rgba(18,21,15,.88)),url('assets/img-4d32ca691d.webp') center/cover}
+.s.tex p{color:var(--ink)}
+.s.emg{background:var(--bg3)}
+.tag{display:inline-block;font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.95rem;color:var(--or);margin-bottom:10px}
+.s.big .tag{color:var(--on-or)}
+
+/* method */
+.method{background:var(--bg2);padding:96px 0;border-block:1px solid var(--line)}
+.method .cols{display:grid;gap:40px}
+.method h2 span{color:var(--or)}
+.steps{display:grid;gap:0}
+.step{padding:22px 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step h3{font-size:2rem;margin-bottom:6px}
+.step p{color:var(--mute)}
+
+/* emergency */
+.emerg{position:relative;isolation:isolate;padding:110px 0;overflow:hidden}
+.emerg::before{content:"";position:absolute;inset:0;z-index:-2;background:url('assets/img-f58baa96e8.webp') center/cover;filter:saturate(.6) brightness(.45)}
+.emerg::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(18,21,15,.6)}
+.emerg h2{font-size:clamp(2.8rem,8.5vw,7rem);max-width:13ch}
+.emerg h2 span{color:var(--or)}
+.emerg p{margin-top:20px;font-size:1.2rem;max-width:44ch}
+.phones{display:grid;gap:12px;margin-top:32px;max-width:560px}
+.ph{display:flex;flex-direction:column;justify-content:center;min-height:84px;padding:14px 22px;border:2px solid var(--or);border-radius:var(--r);text-decoration:none;background:rgba(18,21,15,.7);transition:background .2s}
+.ph:hover{background:rgba(247,148,31,.18)}
+.ph small{font-size:14px;color:var(--mute);letter-spacing:.06em;text-transform:uppercase}
+.ph strong{font-family:var(--disp);font-size:2.4rem;font-weight:800;line-height:1.1;color:var(--or)}
+
+/* area + form */
+.quote{padding:96px 0}
+.quote .cols{display:grid;gap:48px}
+.quote .info p{margin-top:18px;color:var(--mute)}
+.areas{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.areas span{border:1px solid var(--or);color:var(--or);padding:8px 16px;border-radius:var(--r);font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem}
+.details{margin-top:34px;display:grid;gap:4px}
+.details a{font-size:1.15rem;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
+.google{margin-top:26px;display:inline-flex;align-items:baseline;gap:12px;border-top:1px solid var(--line);padding-top:20px}
+.google b{font-family:var(--disp);font-size:3rem;color:var(--or);line-height:1}
+form{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:grid;gap:18px}
+form h3{font-size:2.2rem}
+.f{display:grid;gap:6px}
+label{font-weight:600;font-size:15px;color:var(--ink)}
+input,select,textarea{width:100%;min-height:50px;background:#0d100a;color:var(--ink);border:1px solid #7b7f6e;border-radius:var(--r);padding:12px 14px;font:inherit;font-size:16px}
+textarea{min-height:110px;resize:vertical}
+input::placeholder,textarea::placeholder{color:#a3a393}
+input:focus,select:focus,textarea:focus{border-color:var(--or);outline:2px solid var(--or);outline-offset:1px}
+.two{display:grid;gap:18px}
+form .btn{width:100%}
+.fine{font-size:14px;color:var(--mute)}
+
+footer{border-top:1px solid var(--line);padding:36px 0 28px;color:var(--mute);font-size:15px}
+footer .wrap{display:grid;gap:14px}
+footer .brand{color:var(--ink)}
+footer a{text-underline-offset:3px}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(18,21,15,.96);border-top:1px solid var(--line)}
+.sticky .btn{min-height:52px;width:100%;padding:0 10px}
+
+.rv{opacity:1}
+@media (prefers-reduced-motion:no-preference){
+  .js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+  .js .rv.in{opacity:1;transform:none}
+  .hero h1,.hero .sub,.hero .ctas,.hero .where{animation:up .9s cubic-bezier(.16,1,.3,1) both}
+  .hero .where{animation-delay:.05s}.hero h1{animation-delay:.15s}.hero .sub{animation-delay:.3s}.hero .ctas{animation-delay:.42s}
+  @keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.s,.btn{transition:none}}
+
+@media (min-width:768px){
+  body{padding-bottom:0;font-size:18px}
+  .sticky{display:none}
+  .nav ul{display:flex}
+  .proof .wrap{grid-template-columns:repeat(4,1fr)}
+  .proof div.i,.proof div.i:nth-child(odd),.proof div.i:nth-child(even){border:0;border-right:1px solid var(--line);padding:34px 24px}
+  .proof div.i:first-child{padding-left:0}
+  .proof div.i:last-child{border-right:0}
+  .sgrid{grid-template-columns:repeat(6,1fr)}
+  .s{grid-column:span 2}
+  .s.big{grid-column:span 4;grid-row:span 2;padding:40px;display:flex;flex-direction:column;justify-content:flex-end;min-height:380px}
+  .s.tex{grid-column:span 2}
+  .s.w3{grid-column:span 3}
+  .method .cols{grid-template-columns:5fr 7fr;gap:80px}
+  .phones{grid-template-columns:1fr 1fr;max-width:none}
+  .quote .cols{grid-template-columns:5fr 6fr;gap:80px}
+  .two{grid-template-columns:1fr 1fr}
+  form{padding:40px}
+  footer .wrap{grid-template-columns:1fr auto;align-items:end}
+}
+</style>
+</head>
+<body>
+
+<div class="banner">Website concept prepared for Jones Tree Service Inc. Not the official site. <a href="https://www.jonestreeservices.com/" target="_blank" rel="noopener">See the current site (jonestreeservices.com)</a></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Jones <b>Tree</b> Service</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#method">How we work</a></li>
+      <li><a href="#emergency">Emergency</a></li>
+      <li><a href="#estimate">Estimate</a></li>
+    </ul>
+    <a class="btn p" href="tel:+17704875324">Call<span class="dn">&nbsp;(770) 487-5324</span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <p class="where">Peachtree City, Georgia</p>
+    <h1>Tree removal <em>done right.</em></h1>
+    <p class="sub">Family tree service for Fayette and Coweta counties since 1978. Free estimates, 24 hours a day.</p>
+    <div class="ctas">
+      <a class="btn p" href="tel:+17704875324">Call (770) 487-5324</a>
+      <a class="btn g" href="#estimate">Request an Estimate</a>
+    </div>
+  </div>
+</section>
+
+<section class="proof" aria-label="Why homeowners call Jones">
+  <div class="wrap">
+    <div class="i"><div class="n">1978</div><div class="l">Established, serving Fayette and Coweta</div></div>
+    <div class="i"><div class="n">24/7</div><div class="l">Storm and emergency response</div></div>
+    <div class="i"><div class="n">5.0</div><div class="l">on Google, from 59 reviews</div></div>
+    <div class="i"><div class="n">Insured</div><div class="l">Licensed, insured, workman's comp</div></div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="head rv">
+      <h2>What we take on</h2>
+      <p>A damaged tree is a danger to your family and your property. Residential and commercial, from one limb to a full crane job.</p>
+    </div>
+    <div class="sgrid">
+      <article class="s big rv">
+        <span class="tag">Most requested</span>
+        <h3>Tree removal</h3>
+        <p>Climbed and lowered by rope, section by section, with trunks blocked down to the ground. Your landscaping, fence and roof stay untouched. Crane removal for the extra large and the hazardous.</p>
+      </article>
+      <article class="s tex rv">
+        <h3>Stump removal and grinding</h3>
+        <p>Take the stump out, not just the tree.</p>
+      </article>
+      <article class="s rv">
+        <h3>Tree pruning</h3>
+        <p>Healthy shaping and deadwood removal.</p>
+      </article>
+      <article class="s emg rv">
+        <span class="tag">24 hours</span>
+        <h3>Storm damage cleanup</h3>
+        <p>Fast response any hour, any day. Insurance claims are welcomed.</p>
+      </article>
+      <article class="s rv">
+        <h3>Bucket truck and boom lift</h3>
+        <p>Aerial platform equipment for work that ladders and ropes cannot reach.</p>
+      </article>
+      <article class="s rv">
+        <h3>Commercial height jobs</h3>
+        <p>Tall trees, tight sites and commercial properties.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="method" id="method">
+  <div class="wrap cols">
+    <div class="rv">
+      <h2>Why we are <span>careful</span> with big trees</h2>
+      <p style="margin-top:18px;color:var(--mute)">Tree removal is dangerous work that takes above-average physical ability and quick reactions. We do not recommend anyone try to take down a big tree themselves.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>Climb and lower</h3><p>The most common method. We climb, lower limbs by rope and section the tree down in small pieces.</p></div>
+      <div class="step rv"><h3>Block the trunk</h3><p>Where needed, the trunk is lowered to the ground in blocks so surrounding vegetation and structures stay undamaged.</p></div>
+      <div class="step rv"><h3>Bring in the crane</h3><p>For extra large trees, or a hazardous or dead tree that cannot take the stress of movement, a crane gives a controlled removal.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="emerg" id="emergency">
+  <div class="wrap">
+    <h2 class="rv">Tree on the house? <span>Call now.</span></h2>
+    <p class="rv">Storm service is available 24 hours a day, 7 days a week. Insurance claims welcomed.</p>
+    <div class="phones rv">
+      <a class="ph" href="tel:+17704875324"><small>Office</small><strong>(770) 487-5324</strong></a>
+      <a class="ph" href="tel:+14043172497"><small>Emergency after hours</small><strong>(404) 317-2497</strong></a>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="estimate">
+  <div class="wrap cols">
+    <div class="info rv">
+      <h2>Get your free estimate</h2>
+      <p>Tell us what the tree is doing and where it stands. We will get back to you about your job.</p>
+      <div class="areas"><span>Fayette County</span><span>Coweta County</span></div>
+      <p>Based in Peachtree City, serving homeowners and businesses across both counties since 1978.</p>
+      <div class="details">
+        <a href="tel:+17704875324">(770) 487-5324</a>
+        <a href="tel:+14043172497">After hours: (404) 317-2497</a>
+        <a href="mailto:jonestreeserviceptc@gmail.com">jonestreeserviceptc@gmail.com</a>
+      </div>
+      <div class="google"><b>5.0</b><span>on Google<br>59 reviews</span></div>
+    </div>
+    <form class="rv" onsubmit="event.preventDefault(); alert('Demo form: in the real site this sends your request to Jones Tree Service Inc.')">
+      <h3>Request an estimate</h3>
+      <div class="two">
+        <div class="f"><label for="n">Name</label><input id="n" name="name" autocomplete="name" required></div>
+        <div class="f"><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="f"><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email"></div>
+      <div class="f"><label for="a">Property address or town</label><input id="a" name="address" autocomplete="street-address"></div>
+      <div class="f"><label for="s">What do you need?</label>
+        <select id="s" name="service">
+          <option>Tree removal</option><option>Tree pruning</option><option>Storm damage cleanup</option><option>Stump removal or grinding</option><option>Bucket truck or boom lift</option><option>Commercial height job</option><option>Not sure</option>
+        </select></div>
+      <div class="f"><label for="d">Details</label><textarea id="d" name="details" placeholder="Tree type, where it is, anything urgent"></textarea></div>
+      <button class="btn p" type="submit">Request an Estimate</button>
+      <p class="fine">For emergencies, call instead: (770) 487-5324.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top">Jones Tree Service</a>
+      <p style="margin-top:8px">Tree removal, pruning, stump grinding and storm damage service. Peachtree City, GA. Fayette and Coweta counties.</p>
+    </div>
+    <p><a href="tel:+17704875324">(770) 487-5324</a><br><a href="mailto:jonestreeserviceptc@gmail.com">jonestreeserviceptc@gmail.com</a></p>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="btn p" href="tel:+17704875324">Call now</a>
+  <a class="btn g" href="#estimate">Get a quote</a>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+<script>(function(){try{var u=new URL(location.href);if(u.searchParams.has('hf')){localStorage.setItem('hf-owner','1');u.searchParams.delete('hf');history.replaceState(null,'',u.pathname+u.search+u.hash);}if(localStorage.getItem('hf-owner'))return;}catch(e){}if(navigator.webdriver||!navigator.sendBeacon)return;var sent=false,t;function go(){if(sent||document.visibilityState!=='visible')return;sent=true;navigator.sendBeacon('https://app.highfieldhq.com/api/view',new Blob(['jones-tree-service-inc-387'],{type:'text/plain'}));}function arm(){clearTimeout(t);if(document.visibilityState==='visible')t=setTimeout(go,4000);}document.addEventListener('visibilitychange',arm);arm();})();</script>
+</body>
+</html>
