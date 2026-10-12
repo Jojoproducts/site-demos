@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="demo-build" content="v1-1791779847962">
+<meta name="demo-build" content="v2-1791824291967">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
@@ -115,7 +115,17 @@ section{padding:80px 0}
 @media(min-width:900px){.how-grid{grid-template-columns:1.2fr 1fr;gap:80px}.how-grid>div:nth-child(2){padding-top:64px}}
 
 /* area */
-.area{background:var(--bg2)}
+.area{background:var(--bg2);position:relative;overflow:hidden}
+.area::before{content:"";position:absolute;inset:0;background:url(assets/img-4d32ca691d.webp) center/cover;opacity:.18;filter:grayscale(.6)}
+.area::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg2) 15%,rgba(31,31,28,.55))}
+.area .wrap{position:relative;z-index:1}
+.strip{display:grid;grid-template-columns:1fr;gap:0}
+.strip img{width:100%;height:200px;object-fit:cover;display:block}
+@media(min-width:700px){.strip{grid-template-columns:repeat(3,1fr)}.strip img{height:260px}}
+.how{position:relative;overflow:hidden}
+.how::before{content:"";position:absolute;inset:0;background:url(assets/img-bebd72e116.webp) center/cover;opacity:.15;filter:grayscale(.5)}
+.how::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--bg),rgba(23,23,21,.6))}
+.how .wrap{position:relative;z-index:1}
 .area .wrap{display:grid;gap:36px}
 .area h2{margin-bottom:18px}
 .towns{display:grid;grid-template-columns:1fr 1fr;gap:12px;list-style:none;padding:0}
@@ -254,6 +264,12 @@ footer a{text-decoration:underline}
     </ul>
   </div>
 </section>
+
+<div class="strip" aria-hidden="true">
+  <img src="assets/img-b8783f1ca3.webp" alt="" loading="lazy">
+  <img src="assets/img-46e7a643b3.webp" alt="" loading="lazy">
+  <img src="assets/img-352a9d26e4.webp" alt="" loading="lazy">
+</div>
 
 <section class="how">
   <div class="wrap">
