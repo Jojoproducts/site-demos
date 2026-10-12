@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="demo-build" content="v1-1791779196225">
+<meta name="demo-build" content="v2-1791825850695">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
@@ -87,6 +87,11 @@ section{padding:88px 0}
 @media(min-width:900px){.mulch .wrap{grid-template-columns:6fr 5fr;align-items:center;gap:80px}}
 
 /* uses */
+.uses{position:relative;isolation:isolate}
+.uses>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.uses::before{content:"";position:absolute;inset:0;z-index:-1;background:#0e130dd9}
+.band{height:clamp(180px,32vw,380px);overflow:hidden}
+.band img{width:100%;height:100%;object-fit:cover;filter:saturate(.9)}
 .uses .grid{display:grid;gap:14px;margin-top:44px}
 .use{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:28px;min-height:150px;display:flex;flex-direction:column;justify-content:flex-end}
 .use h3{margin-bottom:6px}
@@ -169,6 +174,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-betw
   </div>
 </div>
 
+<div class="band" role="presentation"><img src="assets/img-bebd72e116.webp" alt="" loading="lazy"></div>
+
 <section class="services" id="services">
   <div class="wrap">
     <div class="head rv">
@@ -204,6 +211,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-betw
 </section>
 
 <section class="uses" id="uses">
+  <img class="bg" src="assets/img-cc1440d13b.webp" alt="" loading="lazy">
   <div class="wrap">
     <h2 class="rv">What people clear for</h2>
     <div class="grid">
@@ -217,6 +225,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-betw
   </div>
 </section>
 
+<div class="band" role="presentation"><img src="assets/img-6852b37e62.webp" alt="" loading="lazy"></div>
+
 <div class="split">
   <div class="rv">
     <h2>Keep it clear</h2>
@@ -227,6 +237,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-betw
   </div>
   <div class="photo"><img src="assets/img-9af6abff8a.webp" alt="Tall trunks rising into a green canopy, seen from below" loading="lazy"></div>
 </div>
+
+<div class="band" role="presentation"><img src="assets/img-a22d3122d6.webp" alt="" loading="lazy"></div>
 
 <section class="contact" id="contact">
   <div class="wrap">
