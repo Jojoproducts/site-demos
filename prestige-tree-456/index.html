@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="demo-build" content="v1-1791780510376">
+<meta name="demo-build" content="v2-1791824114741">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
@@ -38,7 +38,7 @@ img{display:block;max-width:100%}
 
 /* hero */
 .hero{background:var(--forest);color:var(--bone);position:relative;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:url(assets/img-9af6abff8a.webp) center/cover;opacity:.38;mix-blend-mode:luminosity}
+.hero-bg{position:absolute;inset:0;background:url(assets/img-9af6abff8a.webp) center/cover;opacity:.55;mix-blend-mode:luminosity}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--forest) 30%,rgba(20,51,36,.55) 100%)}
 .nav{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:18px 0}
 .logo{font-family:'Bricolage Grotesque';font-weight:800;font-size:22px;letter-spacing:-.02em;text-decoration:none}
@@ -59,6 +59,9 @@ section{padding:88px 0}
 .sit .sub{margin-top:16px;max-width:52ch;color:#3b4a40}
 .sit-grid{margin-top:44px;display:grid;gap:0;grid-template-columns:1fr}
 .sit-item{padding:26px 0;border-top:2px solid var(--ink);display:grid;gap:6px}
+.sit-item img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r);margin-bottom:10px;display:block}
+.strip{padding:0;display:grid;grid-template-columns:1fr}
+.strip div{height:200px;background-size:cover;background-position:center}
 .sit-item h3{font-size:26px;font-weight:700}
 .sit-item p{color:#3b4a40;max-width:46ch}
 
@@ -104,6 +107,8 @@ footer strong{font-family:'Bricolage Grotesque';font-size:20px;color:var(--bone)
 }
 
 @media(min-width:768px){
+  .strip{grid-template-columns:repeat(3,1fr)}
+  .strip div{height:300px}
   body{padding-bottom:0}
   .sticky{display:none}
   .nav a.tel{display:inline-flex}
@@ -145,10 +150,10 @@ footer strong{font-family:'Bricolage Grotesque';font-size:20px;color:var(--bone)
     <h2 class="reveal">What is the tree doing?</h2>
     <p class="sub reveal">Most calls start with a worry. Tell us which one sounds like yours.</p>
     <div class="sit-grid">
-      <div class="sit-item reveal"><h3>It is leaning or looks weak</h3><p>Send a description and we will talk through what you are seeing.</p></div>
-      <div class="sit-item reveal"><h3>A storm brought something down</h3><p>Fallen limbs or a whole tree on your property? Call first, we will take it from there.</p></div>
-      <div class="sit-item reveal"><h3>Branches are too close to the house</h3><p>Overhanging limbs, blocked light or a canopy that has grown past its space.</p></div>
-      <div class="sit-item reveal"><h3>A stump is left behind</h3><p>Ask about getting the yard back after a tree has come out.</p></div>
+      <div class="sit-item reveal"><img src="assets/img-3f7cc1449d.webp" alt="" loading="lazy"><h3>It is leaning or looks weak</h3><p>Send a description and we will talk through what you are seeing.</p></div>
+      <div class="sit-item reveal"><img src="assets/img-1669778735.webp" alt="" loading="lazy"><h3>A storm brought something down</h3><p>Fallen limbs or a whole tree on your property? Call first, we will take it from there.</p></div>
+      <div class="sit-item reveal"><img src="assets/img-5f076697b1.webp" alt="" loading="lazy"><h3>Branches are too close to the house</h3><p>Overhanging limbs, blocked light or a canopy that has grown past its space.</p></div>
+      <div class="sit-item reveal"><img src="assets/img-b8783f1ca3.webp" alt="" loading="lazy"><h3>A stump is left behind</h3><p>Ask about getting the yard back after a tree has come out.</p></div>
     </div>
   </div>
 </section>
@@ -163,6 +168,12 @@ footer strong{font-family:'Bricolage Grotesque';font-size:20px;color:var(--bone)
       <div class="fact reveal"><b>Phone or email</b><span>Reach us either way</span></div>
     </div>
   </div>
+</section>
+
+<section class="strip" aria-hidden="true">
+  <div style="background-image:url(assets/img-133733e893.webp)"></div>
+  <div style="background-image:url(assets/img-c50b97cd3c.webp)"></div>
+  <div style="background-image:url(assets/img-cc1440d13b.webp)"></div>
 </section>
 
 <section class="quote" id="estimate">
