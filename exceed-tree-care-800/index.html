@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="demo-build" content="v3-1791815081838">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Exceed Tree Care | Tree Removal &amp; Stump Grinding in Cumming, GA</title>
+<meta name="description" content="Family-operated, licensed and insured tree service in Cumming, GA. Tree removal, trimming, stump grinding and storm cleanup across Metro Atlanta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#121110;--ink2:#1b1a18;--ink3:#26241f;
+  --paper:#f2efe6;--mute:#b9b4a6;
+  --y:#ffd21f;--r:#c8281e;
+  --line:rgba(242,239,230,.16);
+  --rad:4px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',system-ui,sans-serif;font-size:17px;line-height:1.6;background:var(--ink);color:var(--paper);overflow-x:hidden;padding-bottom:72px}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;line-height:.95;letter-spacing:.005em;font-weight:800}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:var(--rad);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border:2px solid var(--y);white-space:nowrap;cursor:pointer;transition:transform .2s cubic-bezier(.16,1,.3,1),background .2s,color .2s}
+.btn:active{transform:scale(.98)}
+.btn-y{background:var(--y);color:var(--ink)}
+.btn-y:hover{background:var(--paper);border-color:var(--paper)}
+.btn-o{background:transparent;color:var(--paper);border-color:var(--paper)}
+.btn-o:hover{background:var(--paper);color:var(--ink)}
+:focus-visible{outline:3px solid var(--y);outline-offset:3px}
+
+/* banner */
+.banner{background:var(--y);color:var(--ink);font-size:.9rem;line-height:1.35;padding:8px 20px;text-align:center;font-weight:500}
+.banner a{font-weight:600;text-underline-offset:3px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:rgba(18,17,16,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.6rem;text-transform:uppercase;text-decoration:none;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
+.brand i{display:inline-block;width:30px;height:34px;background:var(--y);clip-path:polygon(50% 0,100% 62%,78% 62%,100% 100%,0 100%,22% 62%,0 62%)}
+.brand span{color:var(--y)}
+nav.main{display:none;gap:28px}
+nav.main a{text-decoration:none;font-weight:600;font-size:.95rem;padding:10px 0}
+nav.main a:hover{color:var(--y)}
+.top .call{display:none}
+
+/* hero */
+.hero{position:relative;isolation:isolate;padding:48px 0 56px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(18,17,16,.96) 0%,rgba(18,17,16,.82) 55%,rgba(18,17,16,.55) 100%)}
+.hero .wrap{display:grid;gap:36px}
+.hero h1{font-size:clamp(3.2rem,13vw,6.6rem)}
+.hero h1 em{font-style:normal;color:var(--y);display:block}
+.hero p.lede{margin-top:20px;font-size:1.15rem;max-width:34ch;color:#e7e3d6}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:var(--rad);border:2px solid var(--paper)}
+.hero-photo::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--y);border-radius:var(--rad);z-index:-1}
+
+/* facts strip */
+.facts{background:var(--y);color:var(--ink)}
+.facts ul{list-style:none;display:grid;grid-template-columns:1fr 1fr}
+.facts li{padding:18px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.35rem;text-transform:uppercase;line-height:1.05;border-bottom:2px solid var(--ink);border-right:2px solid var(--ink)}
+.facts li:nth-child(2n){border-right:0}
+.facts li:nth-last-child(-n+2){border-bottom:0}
+.facts small{display:block;font-family:'Barlow',sans-serif;font-weight:500;font-size:.85rem;text-transform:none;margin-top:4px}
+
+section{padding:72px 0}
+.sec-h{font-size:clamp(2.4rem,8vw,4.6rem);max-width:14ch}
+.sec-h em{font-style:normal;color:var(--y)}
+.sec-p{margin-top:18px;max-width:60ch;color:var(--mute)}
+
+/* services */
+.svc-grid{margin-top:40px;display:grid;gap:0;border-top:2px solid var(--paper)}
+.svc{padding:22px 0;border-bottom:1px solid var(--line);display:grid;gap:6px}
+.svc h3{font-size:2rem;transition:color .2s,transform .3s cubic-bezier(.16,1,.3,1)}
+.svc:hover h3{color:var(--y);transform:translateX(8px)}
+.svc p{color:var(--mute);max-width:52ch}
+
+/* pruning feature */
+.feature{background:var(--ink2);padding:0}
+.feature .wrap{padding:0;display:grid}
+.feature img{width:100%;height:100%;min-height:320px;object-fit:cover}
+.feature .txt{padding:56px 20px}
+.feature .txt p{margin-top:16px;color:#d8d3c4;max-width:48ch}
+
+/* stump band */
+.band{position:relative;isolation:isolate;padding:96px 0;overflow:hidden}
+.band>img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+.band::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(18,17,16,.92),rgba(18,17,16,.6))}
+.band h2{font-size:clamp(2.6rem,9vw,5.4rem);max-width:12ch}
+.band h2 em{font-style:normal;color:var(--y)}
+.band p{margin-top:18px;max-width:46ch;font-size:1.1rem}
+.band .btn{margin-top:26px}
+
+/* golf */
+.golf .wrap{display:grid;gap:32px}
+.golf img.g{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--rad)}
+.golf ul{list-style:none;margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+.golf li{border:1.5px solid var(--line);padding:8px 14px;border-radius:var(--rad);font-weight:600;font-size:.95rem}
+.golf blockquote{margin-top:24px;padding-left:18px;border-left:4px solid var(--y);color:#e7e3d6;max-width:56ch}
+
+/* area */
+.area{background:var(--ink2)}
+.towns{margin-top:32px;display:grid;gap:0}
+.towns div{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(2.6rem,11vw,5.5rem);line-height:1;padding:10px 0;border-bottom:1px solid var(--line);color:var(--paper);transition:color .2s,padding .3s}
+.towns div:hover{color:var(--y);padding-left:14px}
+
+/* contact */
+.contact .wrap{display:grid;gap:40px}
+.contact .info a.big{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(2.4rem,9vw,3.6rem);color:var(--y);text-decoration:none;line-height:1.1;margin-top:20px;overflow-wrap:anywhere}
+.contact .info a.mail{display:inline-block;margin-top:8px;font-size:1.15rem;padding:10px 0;overflow-wrap:anywhere}
+form{background:var(--paper);color:var(--ink);padding:28px 22px;border-radius:var(--rad);display:grid;gap:16px}
+form h3{font-size:2rem}
+label{display:grid;gap:6px;font-weight:600;font-size:.95rem}
+input,select,textarea{font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:2px solid #6b665a;border-radius:var(--rad);padding:12px;min-height:48px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--y);outline-offset:1px;border-color:var(--ink)}
+form .btn{background:var(--ink);color:var(--y);border-color:var(--ink);width:100%}
+form .btn:hover{background:var(--y);color:var(--ink)}
+form small{color:#4a463d;font-size:.85rem}
+
+footer{border-top:1px solid var(--line);padding:32px 0 40px;color:var(--mute);font-size:.95rem}
+footer .wrap{display:grid;gap:8px}
+footer a{color:var(--paper)}
+
+/* sticky mobile bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;background:var(--ink);border-top:2px solid var(--y)}
+.sticky a{display:flex;align-items:center;justify-content:center;min-height:56px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.25rem;text-transform:uppercase;letter-spacing:.05em;text-decoration:none}
+.sticky .c{background:var(--y);color:var(--ink)}
+.sticky .e{color:var(--paper)}
+
+/* reveal */
+.rv{opacity:1}
+@media (prefers-reduced-motion:no-preference){
+  .js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+  .js .rv.in{opacity:1;transform:none}
+  .hero-bg{animation:drift 24s ease-in-out infinite alternate}
+  @keyframes drift{from{transform:scale(1.02)}to{transform:scale(1.1)}}
+}
+
+@media(min-width:760px){
+  body{padding-bottom:0;font-size:18px}
+  .sticky{display:none}
+  .wrap{padding:0 40px}
+  nav.main{display:flex}
+  .top .call{display:inline-flex;min-height:44px;padding:0 20px;font-size:1.1rem}
+  .hero{padding:80px 0 88px}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center;gap:64px}
+  .facts ul{grid-template-columns:repeat(4,1fr)}
+  .facts li{border-bottom:0!important;border-right:2px solid var(--ink)!important;padding:22px 24px}
+  .facts li:last-child{border-right:0!important}
+  section{padding:112px 0}
+  .svc-grid{grid-template-columns:1fr 1fr;column-gap:64px}
+  .svc{padding:28px 0}
+  .feature .wrap{grid-template-columns:1fr 1fr;max-width:none}
+  .feature .txt{padding:96px 64px 96px 6vw;align-self:center}
+  .golf .wrap{grid-template-columns:1fr 1fr;align-items:start;gap:72px}.golf ul{margin-top:0}.golf blockquote{margin-top:28px;font-size:1.2rem;line-height:1.5}
+  .contact .wrap{grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  footer .wrap{grid-template-columns:1fr auto}
+}
+@media(min-width:760px) and (max-width:1000px){nav.main{gap:16px}}
+</style>
+</head>
+<body>
+
+<div class="banner">Website concept prepared for Exceed Tree Care. Not the official site. <a href="http://exceedtreecare.com/" target="_blank" rel="noopener">See the current site (exceedtreecare.com)</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Exceed Tree Care home"><i aria-hidden="true"></i>Exceed <span>Tree Care</span></a>
+    <nav class="main" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#area">Service area</a>
+      <a href="#estimate">Contact</a>
+    </nav>
+    <a class="btn btn-y call" href="tel:(404) 449-5124">(404) 449-5124</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding-top:48px">
+  <img class="hero-bg" src="assets/img-133733e893.webp" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div>
+      <h1>Tree removal in <em>Cumming, GA</em></h1>
+      <p class="lede">Family-operated, licensed and insured. Removal, trimming and stump grinding for homes and businesses across Metro Atlanta.</p>
+      <div class="cta">
+        <a class="btn btn-y" href="tel:(404) 449-5124">Call (404) 449-5124</a>
+        <a class="btn btn-o" href="#estimate">Request an estimate</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/img-043d8d4e03.webp" alt="Long-handled loppers cutting a branch where it meets a mossy tree trunk" width="1085" height="733">
+    </div>
+  </div>
+</section>
+
+<div class="facts">
+  <ul>
+    <li>Free estimates<small>and consultations</small></li>
+    <li>Licensed &amp; insured<small>in the state of Georgia</small></li>
+    <li>Family-operated<small>local tree service</small></li>
+    <li>Residential<small>and commercial</small></li>
+  </ul>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2 class="sec-h rv">What we <em>do</em></h2>
+    <p class="sec-p rv">From one unhealthy tree to a whole property cleared for construction.</p>
+    <div class="svc-grid">
+      <div class="svc rv"><h3>Tree removal</h3><p>A custom approach to taking down trees that are dead, unhealthy or in the way.</p></div>
+      <div class="svc rv"><h3>Stump grinding &amp; removal</h3><p>Stumps taken out so the yard is yours again.</p></div>
+      <div class="svc rv"><h3>Trimming &amp; pruning</h3><p>Keeps trees healthy and good looking, and lets light through to everything growing beneath.</p></div>
+      <div class="svc rv"><h3>Tree thinning</h3><p>Thinned canopies, from thick shade trees to vibrant crepe myrtles.</p></div>
+      <div class="svc rv"><h3>Storm damage cleanup</h3><p>Fallen limbs picked up and uprooted landscaping smoothed out, including emergency calls.</p></div>
+      <div class="svc rv"><h3>View clearing</h3><p>Trees cleared back to open up the view from your property.</p></div>
+      <div class="svc rv"><h3>Site clearing for construction</h3><p>Property cleared for a construction project.</p></div>
+      <div class="svc rv"><h3>Tree health checks</h3><p>A visual examination to find unhealthy or dead trees. Some trees may not need to come down at all.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="about">
+  <div class="wrap">
+    <img src="assets/img-3898c900ce.webp" alt="Mown lawn with young trees along a gravel path and a view over wooded hills" width="1366" height="900" loading="lazy">
+    <div class="txt">
+      <h2 class="sec-h rv">Strong, healthy trees <em>first</em></h2>
+      <p class="rv">Exceed Tree Care is a family-operated business providing tree removal and stump grinding to Metro Atlanta customers. Worried about a tree? We will look it over, tell you what we see, and only recommend removal when it is needed.</p>
+      <p class="rv">More than a tree company: whatever your grounds need, we can handle the job.</p>
+      <div style="margin-top:28px"><a class="btn btn-y" href="#estimate">Request an estimate</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <img src="assets/img-4d32ca691d.webp" alt="" aria-hidden="true" loading="lazy">
+  <div class="wrap">
+    <h2 class="rv">Stump in the way? <em>Grind it.</em></h2>
+    <p class="rv">Tell us where it is and we will quote the job.</p>
+    <a class="btn btn-y rv" href="tel:(404) 449-5124">Call (404) 449-5124</a>
+  </div>
+</section>
+
+<section class="golf">
+  <div class="wrap">
+    <div>
+      <h2 class="sec-h rv">Golf course <em>tree work</em></h2>
+      <p class="sec-p rv">Trained crews directed by an arborist who knows which trees to remove and which to preserve during golf course construction.</p>
+    </div>
+    <div>
+      <ul class="rv">
+        <li>Trimming and pruning</li><li>Tree thinning</li><li>Canopy thinning</li><li>Safety pruning</li><li>Tree preservation</li><li>Large tree planting</li><li>Tree transplanting</li><li>Mega-tree transplanting</li>
+      </ul>
+      <blockquote class="rv">On site quickly after storms: Exceed restored Long Cove Golf Club on Hilton Head Island, SC after Hurricane Matthew damaged it in 2016.</blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <h2 class="sec-h rv">Serving <em>Metro Atlanta</em></h2>
+    <div class="towns">
+      <div class="rv">Cumming</div>
+      <div class="rv">Johns Creek</div>
+      <div class="rv">Alpharetta</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="estimate">
+  <div class="wrap">
+    <div class="info">
+      <h2 class="sec-h rv">Get your <em>estimate</em></h2>
+      <p class="sec-p rv">Free estimates and consultations. Call, email or send the form and tell us about the tree.</p>
+      <a class="big" href="tel:(404) 449-5124">(404) 449-5124</a>
+      <a class="mail" href="mailto:romero@exceedtreecare.com">romero@exceedtreecare.com</a>
+    </div>
+    <form onsubmit="event.preventDefault(); alert('Demo form: in the real site this sends your request to Exceed Tree Care.')">
+      <h3>Request an estimate</h3>
+      <label for="n">Your name<input id="n" name="name" autocomplete="name" required></label>
+      <label for="p">Phone<input id="p" name="phone" type="tel" autocomplete="tel" required></label>
+      <label for="e">Email<input id="e" name="email" type="email" autocomplete="email"></label>
+      <label for="s">What do you need?
+        <select id="s" name="service">
+          <option>Tree removal</option><option>Stump grinding</option><option>Trimming or pruning</option><option>Storm damage cleanup</option><option>Site clearing for construction</option><option>Not sure yet</option>
+        </select>
+      </label>
+      <label for="m">Tell us about the job<textarea id="m" name="message"></textarea></label>
+      <button class="btn" type="submit">Send request</button>
+      <small>We reply to your request by phone or email.</small>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:var(--paper)">Exceed Tree Care</strong><br>Cumming, GA. Licensed and insured in the state of Georgia.</div>
+    <div><a href="tel:(404) 449-5124">(404) 449-5124</a><br><a href="mailto:romero@exceedtreecare.com">romero@exceedtreecare.com</a></div>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="c" href="tel:(404) 449-5124">Call now</a>
+  <a class="e" href="#estimate">Get an estimate</a>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+<script>(function(){try{var u=new URL(location.href);if(u.searchParams.has('hf')){localStorage.setItem('hf-owner','1');u.searchParams.delete('hf');history.replaceState(null,'',u.pathname+u.search+u.hash);}if(localStorage.getItem('hf-owner'))return;}catch(e){}if(navigator.webdriver||!navigator.sendBeacon)return;var sent=false,t;function go(){if(sent||document.visibilityState!=='visible')return;sent=true;navigator.sendBeacon('https://app.highfieldhq.com/api/view',new Blob(['exceed-tree-care-800'],{type:'text/plain'}));}function arm(){clearTimeout(t);if(document.visibilityState==='visible')t=setTimeout(go,4000);}document.addEventListener('visibilitychange',arm);arm();})();</script>
+</body>
+</html>
