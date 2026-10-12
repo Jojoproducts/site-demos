@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="demo-build" content="v1-1791779633463">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Matthew's Land Clearing | Land Clearing and Forestry Mulching in Easley, SC</title>
+<meta name="description" content="Veteran owned land clearing, forestry mulching and stump grinding in Easley, SC. Licensed, bonded and insured. Call (864) 478-8779.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#12170f; --bg2:#192012; --line:#2c3623; --ink:#ece9df; --mute:#b4b8a7;
+  --acc:#f2b705; --acc-ink:#161200; --r:4px;
+  --disp:'Barlow Condensed','Arial Narrow',sans-serif; --body:'Barlow',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:76px}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--disp);text-transform:uppercase;line-height:.95;letter-spacing:.005em;font-weight:800}
+h2{font-size:clamp(2.4rem,6vw,4.6rem)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:0 26px;border-radius:var(--r);font:700 1.15rem/1 var(--disp);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid var(--acc);white-space:nowrap;transition:transform .2s,background .2s,color .2s;cursor:pointer}
+.btn:active{transform:translateY(1px) scale(.98)}
+.btn-p{background:var(--acc);color:var(--acc-ink)}
+.btn-p:hover{background:#ffd24a;border-color:#ffd24a}
+.btn-g{background:rgba(18,23,15,.7);color:var(--ink);border-color:var(--ink)}
+.btn-g:hover{background:var(--ink);color:var(--bg)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+
+/* banner */
+.demo{background:var(--acc);color:var(--acc-ink);font-size:.92rem;line-height:1.35;text-align:center;padding:9px 16px;font-weight:500}
+.demo a{font-weight:600}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:rgba(18,23,15,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font:800 1.5rem/1 var(--disp);text-transform:uppercase;text-decoration:none;letter-spacing:.03em}
+.brand b{color:var(--acc)}
+.nav ul{display:none;list-style:none;gap:30px}
+.nav ul a{text-decoration:none;font:600 1.05rem var(--disp);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.nav ul a:hover{color:var(--acc)}
+.nav .btn{min-height:44px;padding:0 18px;font-size:1.05rem}
+@media(min-width:900px){.nav ul{display:flex}}
+
+/* hero */
+.hero{position:relative;min-height:calc(100dvh - 110px);display:flex;align-items:flex-end;isolation:isolate;border-bottom:1px solid var(--line)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(18,23,15,.94) 0%,rgba(18,23,15,.78) 45%,rgba(18,23,15,.15) 100%),linear-gradient(0deg,rgba(18,23,15,.9),transparent 40%)}
+.hero .wrap{padding:56px 0 48px}
+.hero h1{font-size:clamp(3rem,9.5vw,7.4rem);max-width:12ch}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero p.lead{max-width:34ch;margin:22px 0 30px;font-size:1.2rem;color:var(--ink)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero .loc{font:600 1.05rem var(--disp);letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:16px}
+
+/* proof */
+.proof{background:var(--bg2);border-bottom:1px solid var(--line)}
+.proof ul{list-style:none;display:grid;grid-template-columns:1fr 1fr}
+.proof li{padding:22px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proof li:nth-child(2n){border-right:0}
+.proof strong{display:block;font:800 clamp(1.8rem,4vw,2.6rem)/1 var(--disp);color:var(--acc);text-transform:uppercase}
+.proof span{font-size:.98rem;color:var(--mute)}
+@media(min-width:800px){.proof ul{grid-template-columns:repeat(4,1fr)}.proof li{border-bottom:0;border-right:1px solid var(--line)}.proof li:nth-child(2n){border-right:1px solid var(--line)}.proof li:last-child{border-right:0}}
+
+section{padding:84px 0}
+@media(min-width:900px){section{padding:120px 0}}
+
+/* services */
+.svc-head{max-width:20ch;margin-bottom:44px}
+.svc{display:grid;gap:18px}
+.card{position:relative;border:1px solid var(--line);border-radius:var(--r);background:var(--bg2);overflow:hidden;display:flex;flex-direction:column}
+.card .ph{aspect-ratio:16/10;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+.card:hover .ph img{transform:scale(1.04)}
+.card .tx{padding:26px 24px 30px}
+.card h3{font-size:2.3rem;margin-bottom:12px}
+.card p{color:var(--mute);max-width:52ch}
+.card ul{list-style:none;margin-top:16px;display:grid;gap:6px}
+.card li{padding-left:22px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:.7em;width:12px;height:3px;background:var(--acc)}
+.card.big .tx{padding-bottom:34px}
+.card.plain{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
+.card.plain p{color:#2b2400}
+.card.plain .tx{padding:28px 24px}
+@media(min-width:900px){
+  .svc{grid-template-columns:repeat(12,1fr)}
+  .card.big{grid-column:span 7;grid-row:span 2}
+  .card.big .ph{aspect-ratio:auto;flex:1;min-height:380px}
+  .card.stump{grid-column:span 5}
+  .card.plain{grid-column:span 5}
+}
+
+/* before after */
+.ba{background:var(--bg2);border-block:1px solid var(--line)}
+.ba h2{max-width:14ch;margin-bottom:40px}
+.pair{display:grid;gap:14px}
+.pair figure{position:relative;border-radius:var(--r);overflow:hidden}
+.pair img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.pair figcaption{position:absolute;left:0;bottom:0;padding:10px 16px;background:var(--bg);font:700 1.1rem var(--disp);letter-spacing:.1em;text-transform:uppercase}
+.pair figure.after figcaption{background:var(--acc);color:var(--acc-ink)}
+.ba .note{margin-top:20px;color:var(--mute);max-width:60ch}
+@media(min-width:760px){.pair{grid-template-columns:1fr 1fr;gap:6px}}
+
+/* gallery */
+.gal h2{margin-bottom:36px;max-width:16ch}
+.mosaic{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.mosaic figure{overflow:hidden;border-radius:var(--r);min-height:170px}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+.mosaic figure:hover img{transform:scale(1.05)}
+.mosaic .w,.mosaic .t{grid-column:span 2}
+@media(min-width:900px){
+  .mosaic{grid-template-columns:repeat(6,1fr);grid-auto-rows:210px}
+  .mosaic .w{grid-column:span 4;grid-row:span 2}
+  .mosaic .n{grid-column:span 2}
+  .mosaic .t{grid-column:span 6}
+}
+.gal .cap{margin-top:16px;color:var(--mute);font-size:1rem}
+
+/* reviews */
+.rev{background:var(--bg2);border-block:1px solid var(--line)}
+.score{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:44px}
+.score .num{font:800 clamp(5rem,16vw,10rem)/.85 var(--disp);color:var(--acc)}
+.score p{font:700 clamp(1.5rem,3vw,2.2rem)/1.05 var(--disp);text-transform:uppercase;max-width:14ch}
+.quotes{display:grid;gap:14px}
+.quotes blockquote{border-left:4px solid var(--acc);padding:6px 0 6px 22px;font-size:1.2rem;line-height:1.5}
+.quotes cite{display:block;margin-top:10px;font:600 1.05rem var(--disp);letter-spacing:.1em;text-transform:uppercase;color:var(--mute);font-style:normal}
+@media(min-width:900px){.quotes{grid-template-columns:repeat(3,1fr);gap:40px}}
+.rev .src{margin-top:30px;color:var(--mute);font-size:.98rem}
+
+/* contact */
+.contact{display:grid;gap:44px}
+.contact h2{max-width:11ch;margin-bottom:22px}
+.info dl{display:grid;gap:18px;margin-top:30px}
+.info dt{font:700 1.05rem var(--disp);letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+.info dd{font-size:1.2rem}
+.info dd a{text-decoration-color:var(--acc);text-underline-offset:4px}
+.vet{margin-top:30px;padding:18px 20px;border:1px solid var(--line);border-radius:var(--r);color:var(--mute);max-width:44ch}
+form{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:26px 22px;display:grid;gap:18px}
+.f{display:grid;gap:7px}
+label{font:600 1.05rem var(--disp);letter-spacing:.1em;text-transform:uppercase}
+input,select,textarea{width:100%;min-height:50px;padding:12px 14px;background:#0d110a;color:var(--ink);border:1.5px solid #5a6650;border-radius:var(--r);font:400 1rem var(--body)}
+textarea{min-height:120px;resize:vertical}
+input::placeholder,textarea::placeholder{color:#98a08b}
+input:focus,select:focus,textarea:focus{border-color:var(--acc);outline:2px solid var(--acc);outline-offset:1px}
+form .btn{width:100%}
+.row{display:grid;gap:18px}
+@media(min-width:600px){.row{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.contact{grid-template-columns:5fr 6fr;gap:80px;align-items:start}form{padding:36px}}
+
+footer{border-top:1px solid var(--line);padding:34px 0 40px;color:var(--mute);font-size:.98rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+
+/* sticky bar */
+.bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(18,23,15,.96);border-top:1px solid var(--line)}
+.bar .btn{width:100%}
+@media(min-width:900px){.bar{display:none}body{padding-bottom:0}}
+
+/* motion */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<div class="demo">Website concept prepared for Matthew's land clearing. Not the official site. <a href="http://matthewslandclearing.com/" target="_blank" rel="noopener">See the current site (matthewslandclearing.com)</a></div>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top">Matthew's <b>Land Clearing</b></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#estimate">Contact</a></li>
+    </ul>
+    <a class="btn btn-p" href="tel:(864) 478-8779">Call (864) 478-8779</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <img src="assets/img-0458afe856.webp" alt="Yellow tracked forestry mulcher parked on freshly cleared ground at the edge of a wooded lot" fetchpriority="high">
+  <div class="wrap">
+    <p class="loc">Easley, South Carolina</p>
+    <h1>Land clearing <em>and forestry mulching</em> in Easley, SC</h1>
+    <p class="lead">Overgrown lot to usable ground, with no burn piles. Veteran owned, licensed, bonded and insured.</p>
+    <div class="cta">
+      <a class="btn btn-p" href="tel:(864) 478-8779">Call for a free estimate</a>
+      <a class="btn btn-g" href="#estimate">Request an estimate</a>
+    </div>
+  </div>
+</section>
+
+<div class="proof">
+  <div class="wrap">
+    <ul>
+      <li><strong>5.0 / 118</strong><span>reviews on Google</span></li>
+      <li><strong>Veteran owned</strong><span>and operated</span></li>
+      <li><strong>Licensed</strong><span>bonded and insured</span></li>
+      <li><strong>Mon-Fri</strong><span>7am to 9pm</span></li>
+    </ul>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2 class="svc-head rv">What we clear</h2>
+    <div class="svc">
+      <article class="card big rv">
+        <div class="ph"><img src="assets/img-4b3bfe9fab.webp" alt="Yellow forestry mulcher working at the edge of a thick, vine-covered stand of trees" loading="lazy"></div>
+        <div class="tx">
+          <h3>Forestry mulching and land clearing</h3>
+          <p>Thick underbrush, small trees and vines are mulched in place. Got an overgrown lot? We clear it so it is presentable for a sale or just manageable.</p>
+          <ul>
+            <li>Tree mulching and bush mowing</li>
+            <li>Mulching of all underbrush, trees and vegetation</li>
+            <li>Mulched boundaries for surveys and rights of way</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card stump rv">
+        <div class="ph"><img src="assets/img-043d8d4e03.webp" alt="Large tree stump surrounded by freshly turned soil beside a residential street" loading="lazy"></div>
+        <div class="tx">
+          <h3>Stump grinding</h3>
+          <p>No matter how big your stump is, we can grind it down 15 inches below ground.</p>
+        </div>
+      </article>
+      <article class="card plain rv">
+        <div class="tx">
+          <h3>Grading and driveways</h3>
+          <p>Need a driveway? We also do grading. Residential homes and commercial lots you plan to build on or sell.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="ba" id="results">
+  <div class="wrap">
+    <h2 class="rv">Same spot, a few hours apart</h2>
+    <div class="pair rv">
+      <figure><img src="assets/img-35b9c58cfc.webp" alt="Dense vine-covered woods behind a storage shed and a brush pile on the lawn" loading="lazy"><figcaption>Before</figcaption></figure>
+      <figure class="after"><img src="assets/img-25a3c14f7e.webp" alt="The same wooded edge with the undergrowth mulched down to bare ground and the brush pile still on the lawn" loading="lazy"><figcaption>After</figcaption></figure>
+    </div>
+    <p class="note">Customers describe jobs like this finishing in a few hours, with the mulch left on the ground instead of a burn pile.</p>
+  </div>
+</section>
+
+<section class="gal">
+  <div class="wrap">
+    <h2 class="rv">Land we have cleared</h2>
+    <div class="mosaic rv">
+      <figure class="w"><img src="assets/img-3898c900ce.webp" alt="Aerial view of a house with a pool and a freshly cleared slope in the foreground" loading="lazy"></figure>
+      <figure class="n"><img src="assets/img-fdd1b79886.webp" alt="Cleared red clay slope below tall trees and a black iron fence" loading="lazy"></figure>
+      <figure class="n"><img src="assets/img-48bb5312f2.webp" alt="Yellow CAT skid steer beside a cleared, open stand of trees" loading="lazy"></figure>
+      <figure class="t"><img src="assets/img-061ab4d465.webp" alt="Forestry mulcher attachment at the edge of freshly mulched ground in the woods, with a small American flag" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="reviews">
+  <div class="wrap">
+    <div class="score rv">
+      <span class="num">5.0</span>
+      <p>on Google from 118 reviews</p>
+    </div>
+    <div class="quotes">
+      <blockquote class="rv">"He was friendly and a hard worker. He was reasonably priced and punctual."<cite>Mark Eskew</cite></blockquote>
+      <blockquote class="rv">"Matthew came out and cleared about an acre of wooded land that we've never been able to enjoy due to thick undergrowth."<cite>Barry Rainey</cite></blockquote>
+      <blockquote class="rv">"Matthew arrived on time exactly when he said he would."<cite>Kerry Hunsicker</cite></blockquote>
+    </div>
+    <p class="src">Customer testimonials as shown on the current Matthew's Land Clearing website.</p>
+  </div>
+</section>
+
+<section id="estimate">
+  <div class="wrap contact">
+    <div class="info rv">
+      <h2>Tell us about your land</h2>
+      <p style="color:var(--mute);max-width:40ch">Describe the lot and what you want done. Matthew will get back to you about a free estimate.</p>
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:(864) 478-8779">(864) 478-8779</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:matthewslandclearing@gmail.com">matthewslandclearing@gmail.com</a></dd></div>
+        <div><dt>Hours</dt><dd>Monday to Friday, 7am to 9pm</dd></div>
+        <div><dt>Based in</dt><dd>Easley, South Carolina</dd></div>
+      </dl>
+      <p class="vet">Veteran owned and operated. Honest, reliable, trustworthy. Licensed, bonded and insured.</p>
+    </div>
+    <form class="rv" onsubmit="event.preventDefault(); alert('Demo form: in the real site this sends your request to Matthew\'s land clearing.')">
+      <div class="row">
+        <div class="f"><label for="n">Name</label><input id="n" name="name" autocomplete="name" required></div>
+        <div class="f"><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="f"><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email"></div>
+      <div class="f"><label for="s">What do you need?</label>
+        <select id="s" name="service">
+          <option>Forestry mulching</option>
+          <option>Land clearing</option>
+          <option>Grading or driveway</option>
+          <option>Stump grinding</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="f"><label for="d">About the property</label><textarea id="d" name="details" placeholder="Where it is, roughly how much land, what is growing on it"></textarea></div>
+      <button class="btn btn-p" type="submit">Request an estimate</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Matthew's Land Clearing, Easley, SC</span>
+    <span><a href="tel:(864) 478-8779">(864) 478-8779</a> &nbsp; <a href="mailto:matthewslandclearing@gmail.com">matthewslandclearing@gmail.com</a></span>
+  </div>
+</footer>
+
+<div class="bar">
+  <a class="btn btn-p" href="tel:(864) 478-8779">Call now</a>
+  <a class="btn btn-g" href="#estimate">Get estimate</a>
+</div>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+<script>(function(){try{var u=new URL(location.href);if(u.searchParams.has('hf')){localStorage.setItem('hf-owner','1');u.searchParams.delete('hf');history.replaceState(null,'',u.pathname+u.search+u.hash);}if(localStorage.getItem('hf-owner'))return;}catch(e){}if(navigator.webdriver||!navigator.sendBeacon)return;var sent=false,t;function go(){if(sent||document.visibilityState!=='visible')return;sent=true;navigator.sendBeacon('https://app.highfieldhq.com/api/view',new Blob(['matthew-s-land-clearing-770'],{type:'text/plain'}));}function arm(){clearTimeout(t);if(document.visibilityState==='visible')t=setTimeout(go,4000);}document.addEventListener('visibilitychange',arm);arm();})();</script>
+</body>
+</html>
