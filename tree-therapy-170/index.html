@@ -1,122 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta name="demo-build" content="v4-1791755200254">
+<meta name="demo-build" content="v5-1791780347548">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Tree Therapy | Tree Service, Rated 5.0 on Google</title>
-<meta name="description" content="Tree Therapy, a tree service rated 5.0 on Google by 135 reviewers. Call (704) 962-6013 or request an estimate.">
+<title>Tree Therapy | Tree Service, 5.0 on Google</title>
+<meta name="description" content="Tree Therapy is a tree service rated 5.0 on Google from 135 reviewers. Call (704) 962-6013 or request an estimate.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Archivo+Narrow:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0e2418;--green:#16422c;--leaf:#8fd19e;--paper:#f6f9f3;--line:#cddccb;--accent:#e4570f;--accent-d:#b9430a;--r:12px}
-*{box-sizing:border-box;margin:0}
+:root{
+  --ink:#0d1a12; --forest:#12281b; --moss:#1c3b28; --bone:#eef0e6; --mute:#b4c2b3;
+  --orange:#ff7a1a; --orange-d:#e5640a; --r:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font:400 17px/1.6 Figtree,system-ui,sans-serif;color:var(--ink);background:var(--paper);overflow-x:hidden;padding-bottom:78px}
-h1,h2,h3,.disp{font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.025em;line-height:1}
+body{background:var(--ink);color:var(--bone);font-family:'Archivo',system-ui,sans-serif;font-size:17px;line-height:1.6;padding-bottom:76px;overflow-x:hidden}
 a{color:inherit}
-.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
-.banner{background:#07150d;color:#d8e6d8;font-size:14px;padding:9px 20px;text-align:center;line-height:1.4}
-.banner a{color:#fff;font-weight:600;text-underline-offset:3px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:var(--r);font-weight:600;text-decoration:none;border:2px solid transparent;transition:transform .2s,background .2s;white-space:nowrap}
-.btn:active{transform:scale(.98)}
-.btn.pri{background:var(--accent);color:#fff}.btn.pri:hover{background:var(--accent-d)}
-.btn.sec{border-color:#fff;color:#fff}.btn.sec:hover{background:rgba(255,255,255,.12)}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-nav.top{background:var(--green);color:#fff}
-nav.top .wrap{display:flex;align-items:center;justify-content:space-between;min-height:64px}
-.logo{font-family:'Bricolage Grotesque';font-weight:800;font-size:22px;text-decoration:none;letter-spacing:-.02em}
-nav.top a.tel{text-decoration:none;font-weight:600;min-height:44px;display:inline-flex;align-items:center}
-.hero{background:var(--green);color:#fff;position:relative;overflow:hidden;padding:36px 0 64px}
-.hero::before{content:"";position:absolute;right:-18%;top:-30%;width:90vmin;height:90vmin;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0 22px,rgba(143,209,158,.10) 22px 24px)}
-.hero .wrap{position:relative;display:grid;gap:40px}
-.hero h1{font-size:clamp(44px,9vw,92px);font-weight:800;max-width:11ch}
-.hero h1 em{font-style:normal;color:var(--leaf)}
-.hero p.lead{font-size:19px;max-width:34ch;margin:22px 0 28px;color:#d6e6d8}
-.cta{display:flex;flex-wrap:wrap;gap:12px}
-.score{align-self:end;border-top:2px solid rgba(255,255,255,.35);padding-top:18px}
-.score .big{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(96px,26vw,210px);line-height:.85;color:var(--leaf);letter-spacing:-.05em}
-.score .stars{color:#ffc247;font-size:26px;letter-spacing:4px;margin:10px 0 4px}
-.score p{font-size:18px;color:#fff}
-@media(min-width:860px){.hero{padding:56px 0 80px}.hero .wrap{grid-template-columns:1.25fr .75fr;align-items:end}}
-section{padding:72px 0}
-.band{height:clamp(160px,28vw,320px);background-size:cover;background-position:center;background-color:var(--green)}
-h2{font-size:clamp(32px,5vw,52px);font-weight:800;max-width:16ch}
-.routes{display:grid;gap:0;margin-top:36px;border-top:2px solid var(--ink)}
-.route{display:grid;gap:6px;padding:26px 0;border-bottom:1px solid var(--line);text-decoration:none}
-.route small{font-weight:600;color:var(--accent-d);font-size:16px}
-.route strong{font-family:'Bricolage Grotesque';font-size:clamp(22px,3.2vw,36px);letter-spacing:-.02em;line-height:1.1;overflow-wrap:anywhere}
-.route:hover strong{color:var(--accent-d)}
-@media(min-width:860px){.routes{grid-template-columns:1fr 1fr;column-gap:48px}}
-.contact{background:#e8f0e4}
-.contact .wrap{display:grid;gap:40px}
-@media(min-width:860px){.contact .wrap{grid-template-columns:.8fr 1.2fr;gap:64px}}
-.contact p.sub{margin-top:18px;max-width:38ch}
-form{display:grid;gap:16px;background:#fff;padding:28px;border-radius:var(--r);border:1px solid var(--line)}
-label{display:grid;gap:6px;font-weight:600;font-size:16px}
-input,textarea{font:inherit;padding:13px 14px;border:1.5px solid #6b8672;border-radius:8px;background:#fff;color:var(--ink);min-height:48px;width:100%}
-textarea{min-height:130px;resize:vertical}
-.row{display:grid;gap:16px}@media(min-width:600px){.row{grid-template-columns:1fr 1fr}}
-form .btn{width:100%;font:inherit;font-weight:600;cursor:pointer}
-footer{background:#07150d;color:#cfe0d0;padding:36px 0;font-size:16px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:center}
-footer a{display:inline-flex;min-height:44px;align-items:center}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px;background:var(--green);box-shadow:0 -4px 16px rgba(0,0,0,.25)}
-.bar .btn{min-height:50px;padding:0 8px}
-@media(min-width:860px){.bar{display:none}body{padding-bottom:0}}
-@media(prefers-reduced-motion:no-preference){.rise{animation:rise .8s cubic-bezier(.16,1,.3,1) both}.rise.d{animation-delay:.12s}.hero::before{animation:spin 120s linear infinite}@keyframes rise{from{opacity:0;transform:translateY(22px)}}@keyframes spin{to{transform:rotate(360deg)}}}
+img{max-width:100%;display:block}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+
+.concept{background:var(--bone);color:#1b2a20;font-size:14px;line-height:1.4;padding:10px 20px;text-align:center}
+.concept a{font-weight:700;text-decoration:underline;text-underline-offset:3px;display:inline-block;padding:6px 2px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r);font:800 17px/1 'Archivo',sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;white-space:nowrap;transition:transform .2s cubic-bezier(.16,1,.3,1),background .2s}
+.btn:active{transform:translateY(1px) scale(.98)}
+.btn-primary{background:var(--orange);color:#1a0d00}
+.btn-primary:hover{background:#ff8f3f}
+.btn-ghost{border-color:rgba(238,240,230,.7);color:var(--bone);background:rgba(13,26,18,.45)}
+.btn-ghost:hover{background:rgba(13,26,18,.8)}
+
+/* hero */
+.hero{position:relative;min-height:calc(100dvh - 40px);display:flex;flex-direction:column;background:
+  linear-gradient(90deg,rgba(9,20,13,.88) 0%,rgba(9,20,13,.6) 50%,rgba(9,20,13,.15) 100%),
+  url('assets/canopy-green-trunk.webp') center/cover}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:900 22px/1 'Archivo',sans-serif;letter-spacing:-.01em;text-decoration:none;font-stretch:112%}
+.logo b{color:var(--orange)}
+.nav .tel{font-weight:800;padding:0 14px;background:rgba(13,26,18,.7);border-radius:var(--r);text-decoration:none;min-height:44px;display:none;align-items:center}
+.hero-body{flex:1;display:grid;align-content:center;padding:36px 0 56px}
+.hero h1{font-size:clamp(2.6rem,9vw,5.8rem);line-height:.96;font-weight:900;font-stretch:100%;letter-spacing:-.03em;max-width:12ch;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero p.sub{margin-top:22px;max-width:30ch;font-size:1.2rem;color:var(--bone)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.rating{display:inline-flex;align-items:baseline;gap:12px;margin-top:34px;padding:14px 18px;background:rgba(13,26,18,.7);border-left:4px solid var(--orange)}
+.rating strong{font:900 2.4rem/1 'Archivo';color:var(--orange)}
+.rating span{font-size:.98rem;line-height:1.3}
+
+/* services */
+.sec{padding:clamp(64px,10vw,130px) 0}
+h2{font-size:clamp(2rem,5.4vw,3.8rem);line-height:1;font-weight:900;letter-spacing:-.025em;max-width:16ch;text-wrap:balance}
+.lead{margin-top:18px;max-width:52ch;color:var(--mute)}
+.svc{margin-top:48px;display:grid;gap:0;grid-template-columns:1fr}
+.svc li{list-style:none;padding:26px 0;border-top:1px solid rgba(238,240,230,.18)}
+.svc li:last-child{border-bottom:1px solid rgba(238,240,230,.18)}
+.svc h3{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;letter-spacing:-.02em;line-height:1.05;transition:color .25s}
+.svc li:hover h3{color:var(--orange)}
+.svc p{color:var(--mute);margin-top:8px;max-width:44ch}
+
+/* bands */
+.band{position:relative;display:grid;align-items:center;min-height:clamp(340px,52vw,560px);background-size:cover;background-position:center;isolation:isolate}
+.band::before{content:"";position:absolute;inset:0;background:rgba(9,20,13,.38);z-index:-1}
+.band-a{background-image:url('assets/canopy-tall-trunks.webp')}
+.band-b{background-image:url('assets/forest-sunrays.webp')}
+.band .wrap{padding:60px 0}
+.band .big{font:900 clamp(4.5rem,18vw,12rem)/.85 'Archivo';letter-spacing:-.05em;color:var(--bone);text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.band .big small{color:var(--orange);font-size:.4em;letter-spacing:-.02em}
+.band p{margin-top:18px;font-size:1.25rem;font-weight:600;max-width:26ch;text-shadow:0 1px 14px rgba(0,0,0,.7)}
+.band-b h2{text-shadow:0 2px 24px rgba(0,0,0,.6);max-width:14ch}
+
+/* intro */
+.intro{background:var(--forest)}
+.intro-grid{display:grid;gap:34px}
+.intro p{font-size:1.2rem;max-width:46ch;color:var(--bone)}
+
+/* contact */
+.contact{background:var(--moss)}
+.contact-grid{display:grid;gap:44px}
+.direct a.big-tel{display:block;font:900 clamp(2.2rem,7vw,3.6rem)/1.05 'Archivo';letter-spacing:-.03em;text-decoration:none;margin:20px 0 6px;color:var(--orange)}
+.direct .mail{display:inline-block;font-weight:700;font-size:1.1rem;padding:10px 0;word-break:break-all}
+.direct dl{margin-top:22px;color:var(--mute)}
+form{background:var(--bone);color:#14241a;padding:clamp(22px,4vw,38px);border-radius:var(--r);display:grid;gap:16px}
+form h3{font-size:1.6rem;font-weight:900;letter-spacing:-.02em;line-height:1.1}
+label{display:grid;gap:6px;font-weight:700;font-size:.95rem}
+input,select,textarea{font:500 17px/1.4 'Archivo',sans-serif;min-height:50px;padding:12px 14px;border:2px solid #6f8274;border-radius:var(--r);background:#fff;color:#14241a;width:100%}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--orange);border-color:#14241a}
+.hint{font-weight:500;font-size:.88rem;color:#44574a}
+form .btn{width:100%}
+footer{padding:34px 0;color:var(--mute);font-size:.95rem;background:var(--ink)}
+footer a{padding:8px 0;display:inline-block}
+
+/* sticky bar */
+.sticky{position:fixed;inset:auto 0 0 0;z-index:50;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px;background:rgba(13,26,18,.96);border-top:1px solid rgba(238,240,230,.15)}
+.sticky .btn{min-height:52px;padding:0 10px}
+
+@media (min-width:860px){
+  body{padding-bottom:0;font-size:18px}
+  .sticky{display:none}
+  .nav .tel{display:inline-flex}
+  .svc{grid-template-columns:1fr 1fr;column-gap:64px}
+  .svc li:nth-last-child(2){border-bottom:1px solid rgba(238,240,230,.18)}
+  .intro-grid{grid-template-columns:5fr 6fr;align-items:start;gap:80px}
+  .contact-grid{grid-template-columns:5fr 6fr;gap:80px;align-items:start}
+  .hero-body{padding-bottom:90px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .rise{opacity:0;transform:translateY(22px);animation:rise .8s cubic-bezier(.16,1,.3,1) forwards}
+  .rise:nth-child(2){animation-delay:.1s}.rise:nth-child(3){animation-delay:.2s}.rise:nth-child(4){animation-delay:.3s}
+  @keyframes rise{to{opacity:1;transform:none}}
+}
 </style>
 </head>
 <body>
-<div class="banner">Website concept prepared for Tree Therapy. Not the official site. <a href="http://www.treetherapy704.com/" target="_blank" rel="noopener">See the current site (treetherapy704.com)</a></div>
-<nav class="top"><div class="wrap"><a class="logo" href="#top">Tree Therapy</a><a class="tel" href="tel:+17049626013">(704) 962-6013</a></div></nav>
-<header class="hero" id="top">
-<div class="wrap">
-<div class="rise">
-<h1>Tree service, <em>done right.</em></h1>
-<p class="lead">Call Tree Therapy, or send a few details and ask for an estimate.</p>
-<div class="cta"><a class="btn pri" href="tel:+17049626013">Call (704) 962-6013</a><a class="btn sec" href="#estimate">Request an estimate</a></div>
-</div>
-<div class="score rise d" role="img" aria-label="Rated 5.0 on Google by 135 reviewers">
-<div class="big">5.0</div>
-<div class="stars" aria-hidden="true">★★★★★</div>
-<p>Rated 5.0 on Google by 135 reviewers.</p>
-</div>
-</div>
+<div class="concept">Website concept prepared for Tree Therapy. Not the official site. <a href="http://www.treetherapy704.com/" target="_blank" rel="noopener">See the current site (treetherapy704.com)</a></div>
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="#top">TREE<b>THERAPY</b></a>
+      <a class="tel" href="tel:(704) 962-6013">(704) 962-6013</a>
+    </nav>
+  </div>
+  <div class="wrap hero-body" id="top">
+    <div>
+      <h1 class="rise">Tree service, <em>rated 5.0</em> by 135 reviewers.</h1>
+      <p class="sub rise">Tree Therapy. Call us or send your request online.</p>
+      <div class="cta rise">
+        <a class="btn btn-primary" href="tel:(704) 962-6013">Call (704) 962-6013</a>
+        <a class="btn btn-ghost" href="#estimate">Request an estimate</a>
+      </div>
+      <div class="rating rise"><strong>5.0</strong><span>on Google<br>from 135 reviewers</span></div>
+    </div>
+  </div>
 </header>
-<div class="band" role="presentation" style="background-image:linear-gradient(rgba(14,36,24,.25),rgba(14,36,24,.25)),url(brief/stock/canopy-green-trunk.webp)"></div>
-<section>
-<div class="wrap">
-<h2>Talk to Tree Therapy directly.</h2>
-<div class="routes">
-<a class="route" href="tel:+17049626013"><small>Call</small><strong>(704) 962-6013</strong></a>
-<a class="route" href="mailto:treetherapy704@gmail.com"><small>Email</small><strong>treetherapy704@gmail.com</strong></a>
-</div>
-</div>
+
+<main>
+<section class="sec" aria-labelledby="svc-h">
+  <div class="wrap">
+    <h2 id="svc-h">What Tree Therapy can help with</h2>
+    <p class="lead">Tell us what is going on with your trees and we will talk it through.</p>
+    <ul class="svc">
+      <li><h3>Tree removal</h3><p>Trees that are dead, leaning, or simply in the wrong place.</p></li>
+      <li><h3>Tree trimming</h3><p>Shaping and thinning to keep branches clear of the house and healthy.</p></li>
+      <li><h3>Stump grinding</h3><p>Take the stump out once the tree is gone.</p></li>
+      <li><h3>Storm cleanup</h3><p>Fallen limbs and trees after bad weather.</p></li>
+    </ul>
+  </div>
 </section>
-<div class="band" role="presentation" style="background-image:linear-gradient(rgba(14,36,24,.25),rgba(14,36,24,.25)),url(brief/stock/forest-sunlight.webp)"></div>
-<section class="contact" id="estimate">
-<div class="wrap">
-<div>
-<h2>Request an estimate.</h2>
-<p class="sub">Tell Tree Therapy what the tree problem is and how to reach you.</p>
-</div>
-<form onsubmit="event.preventDefault(); alert('Demo form: in the real site this sends your request to Tree Therapy.')">
-<div class="row">
-<label>Your name<input name="name" autocomplete="name" required></label>
-<label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
-</div>
-<label>Email<input name="email" type="email" autocomplete="email"></label>
-<label>What do you need help with?<textarea name="message" required></textarea></label>
-<button class="btn pri" type="submit">Request an estimate</button>
-</form>
-</div>
+
+<section class="band band-a" aria-label="Tall trees seen from below">
+  <div class="wrap">
+    <div class="big">5.0<small> / 5</small></div>
+    <p>on Google, from 135 reviewers.</p>
+  </div>
 </section>
-<div class="band" role="presentation" style="background-image:linear-gradient(rgba(14,36,24,.25),rgba(14,36,24,.25)),url(brief/stock/canopy-tall-trunks.webp)"></div>
-<footer><div class="wrap"><strong class="disp" style="font-size:20px;color:#fff">Tree Therapy</strong><a href="tel:+17049626013">(704) 962-6013</a><a href="mailto:treetherapy704@gmail.com">treetherapy704@gmail.com</a><span>Rated 5.0 on Google by 135 reviewers.</span></div></footer>
-<div class="bar"><a class="btn pri" href="tel:+17049626013">Call</a><a class="btn sec" href="#estimate">Get an estimate</a></div>
+
+<section class="sec intro">
+  <div class="wrap intro-grid">
+    <h2>Tree work is a big decision. Talk to a real person first.</h2>
+    <div>
+      <p>Tree Therapy is a tree service. The easiest way to start is a phone call: describe the tree, the problem, and where it stands, and ask for an estimate.</p>
+      <div class="cta"><a class="btn btn-primary" href="tel:(704) 962-6013">Call (704) 962-6013</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band band-b" aria-label="Sunlight through tall trees">
+  <div class="wrap"><h2>Healthier trees. Safer yard.</h2></div>
+</section>
+
+<section class="sec contact" id="estimate" aria-labelledby="est-h">
+  <div class="wrap contact-grid">
+    <div class="direct">
+      <h2 id="est-h">Get a quote for your trees</h2>
+      <a class="big-tel" href="tel:(704) 962-6013">(704) 962-6013</a>
+      <a class="mail" href="mailto:treetherapy704@gmail.com">treetherapy704@gmail.com</a>
+      <dl><dt>Rated</dt><dd>5.0 on Google from 135 reviewers</dd></dl>
+    </div>
+    <form onsubmit="event.preventDefault(); alert('Demo form: in the real site this sends your request to Tree Therapy.')">
+      <h3>Request an estimate</h3>
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email"></label>
+      <label>What do you need?
+        <select name="service">
+          <option>Tree removal</option><option>Tree trimming</option><option>Stump grinding</option><option>Storm cleanup</option><option>Not sure yet</option>
+        </select>
+      </label>
+      <label>Tell us about the tree<textarea name="details"></textarea><span class="hint">Where it is, how big, and what worries you.</span></label>
+      <button class="btn btn-primary" type="submit">Request an estimate</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Tree Therapy &middot; Tree service &middot; <a href="tel:(704) 962-6013">(704) 962-6013</a> &middot; <a href="mailto:treetherapy704@gmail.com">treetherapy704@gmail.com</a></div>
+</footer>
+
+<div class="sticky">
+  <a class="btn btn-primary" href="tel:(704) 962-6013">Call now</a>
+  <a class="btn btn-ghost" href="#estimate">Get a quote</a>
+</div>
 <script>(function(){try{var u=new URL(location.href);if(u.searchParams.has('hf')){localStorage.setItem('hf-owner','1');u.searchParams.delete('hf');history.replaceState(null,'',u.pathname+u.search+u.hash);}if(localStorage.getItem('hf-owner'))return;}catch(e){}if(navigator.webdriver||!navigator.sendBeacon)return;var sent=false,t;function go(){if(sent||document.visibilityState!=='visible')return;sent=true;navigator.sendBeacon('https://app.highfieldhq.com/api/view',new Blob(['tree-therapy-170'],{type:'text/plain'}));}function arm(){clearTimeout(t);if(document.visibilityState==='visible')t=setTimeout(go,4000);}document.addEventListener('visibilitychange',arm);arm();})();</script>
 </body>
 </html>
