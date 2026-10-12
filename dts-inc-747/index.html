@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="demo-build" content="v2-1791781954284">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>DTS, Inc. | Storm Cleanup and Disaster Recovery in Greer, SC</title>
+<meta name="description" content="Disaster recovery, debris hauling and reduction, and tree removal and trimming from Greer, South Carolina. Approved SCDOT and NCDOT contractor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b1626;
+  --ink-2:#102036;
+  --ink-3:#18304d;
+  --line:rgba(236,230,214,.16);
+  --text:#ece6d6;
+  --muted:#b4bccb;
+  --amber:#f2a900;
+  --amber-ink:#1a1200;
+  --r:4px;
+  --display:'Barlow Condensed','Arial Narrow',sans-serif;
+  --body:'Barlow',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--text);font:400 17px/1.6 var(--body);overflow-x:hidden;padding-bottom:76px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--display);font-weight:700;text-transform:uppercase;line-height:.95;letter-spacing:.005em}
+h2{font-size:clamp(2.4rem,6vw,4.4rem)}
+.amber{color:var(--amber)}
+
+/* concept banner */
+.concept{background:var(--amber);color:var(--amber-ink);font-size:14px;line-height:1.35;padding:9px 20px;text-align:center;font-weight:500}
+.concept a{font-weight:600;text-underline-offset:3px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(11,22,38,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:40px;width:auto;border-radius:var(--r)}
+.brand span{display:none;font:700 1.05rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.nav ul{display:none;list-style:none;padding:0;gap:28px}
+.nav ul a{text-decoration:none;font-weight:500;font-size:15px;color:var(--muted)}
+.nav ul a:hover{color:var(--amber)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:var(--r);font:700 1.05rem/1 var(--display);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid var(--amber);transition:transform .2s,background .2s,color .2s;white-space:nowrap;cursor:pointer}
+.btn:active{transform:translateY(1px) scale(.98)}
+.btn-fill{background:var(--amber);color:var(--amber-ink)}
+.btn-fill:hover{background:#ffc233;border-color:#ffc233}
+.btn-line{background:rgba(11,22,38,.55);color:var(--text);border-color:rgba(236,230,214,.6)}
+.btn-line:hover{border-color:var(--amber);color:var(--amber)}
+.nav .btn{min-height:44px;padding:0 16px}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+
+/* hero */
+.hero{position:relative;min-height:calc(100dvh - 110px);display:flex;align-items:flex-end;isolation:isolate;border-bottom:1px solid var(--line)}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:url('assets/img-c6e4bd4f59.webp') center 40%/cover}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(11,22,38,.55) 0%,rgba(11,22,38,.55) 35%,rgba(11,22,38,.93) 100%)}
+.hero .wrap{padding-top:48px;padding-bottom:44px;width:100%}
+.hero h1{font-size:clamp(3rem,11.5vw,8.2rem);max-width:12ch}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p{margin-top:22px;max-width:36ch;font-size:1.2rem;color:var(--text)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .tag{font:600 .95rem/1 var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:18px}
+
+/* proof */
+.proof{background:var(--amber);color:var(--amber-ink)}
+.proof .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.proof .wrap>div{padding:22px 0;border-bottom:1.5px solid rgba(26,18,0,.25)}
+.proof .wrap>div:nth-child(odd){padding-right:14px}
+.proof .wrap>div:nth-child(even){padding-left:14px;border-left:1.5px solid rgba(26,18,0,.25)}
+.proof .wrap>div:nth-last-child(-n+2){border-bottom:0}
+.proof b{display:block;font:800 clamp(2.6rem,9vw,4.6rem)/.9 var(--display)}
+.proof span{display:block;margin-top:6px;font-weight:600;font-size:.95rem;line-height:1.3}
+
+section{padding:88px 0}
+.lead{max-width:60ch;color:var(--muted);margin-top:20px;font-size:1.1rem}
+
+/* storms */
+.storm-grid{display:grid;gap:0;margin-top:44px;border-top:1px solid var(--line)}
+.storm-grid div{padding:22px 0;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.storm-grid h3{font-size:clamp(2.2rem,8vw,4rem);color:var(--text);transition:color .25s,transform .25s}
+.storm-grid div:hover h3{color:var(--amber);transform:translateX(8px)}
+.storm-grid p{max-width:28ch;color:var(--muted);font-size:1rem;text-align:right}
+
+/* capabilities */
+.caps{background:var(--ink-2)}
+.cap-grid{display:grid;gap:14px;margin-top:44px}
+.cap{background:var(--ink-3);border-radius:var(--r);padding:26px 24px;border-left:4px solid var(--amber)}
+.cap h3{font-size:1.9rem;margin-bottom:10px}
+.cap p{color:var(--muted)}
+
+/* response band */
+.band{position:relative;isolation:isolate;padding:120px 0;border-block:1px solid var(--line)}
+.band::before{content:"";position:absolute;inset:0;z-index:-2;background:url('assets/img-f58baa96e8.webp') center/cover;filter:saturate(.7)}
+.band::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(11,22,38,.82)}
+.band h2{max-width:14ch}
+.band p{max-width:46ch;margin-top:22px;font-size:1.15rem}
+
+/* services */
+.svc{margin-top:44px;display:grid;gap:0;grid-template-columns:1fr}
+.svc li{list-style:none;padding:18px 0;border-top:1px solid var(--line);font:600 1.7rem/1.1 var(--display);text-transform:uppercase;letter-spacing:.02em;display:flex;align-items:center;gap:14px}
+.svc li::before{content:"";width:12px;height:12px;background:var(--amber);flex:none;transform:rotate(45deg)}
+.svc li small{font:400 .95rem/1.4 var(--body);color:var(--muted);text-transform:none;letter-spacing:0;margin-left:auto;text-align:right;max-width:20ch}
+
+/* contracts */
+.contracts{background:var(--ink-2)}
+.con-list{margin-top:40px;display:grid;gap:14px}
+.con{padding:24px;border:1.5px solid var(--line);border-radius:var(--r)}
+.con h3{font-size:2rem;color:var(--amber);margin-bottom:6px}
+.con p{color:var(--muted)}
+.docs{margin-top:40px;max-width:60ch;color:var(--text)}
+.docs b{color:var(--amber)}
+
+/* contact */
+.contact .grid{display:grid;gap:44px}
+.facts{margin-top:30px;display:grid;gap:18px}
+.facts a,.facts address{font-style:normal;font-size:1.15rem}
+.facts dt{font:600 .85rem/1 var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:6px}
+.facts dd{margin:0}
+.facts .big{font:700 clamp(2rem,7vw,3rem)/1 var(--display);text-decoration:none;letter-spacing:.02em}
+form{background:var(--ink-3);padding:26px 22px;border-radius:var(--r);display:grid;gap:18px;border-top:4px solid var(--amber)}
+form h3{font-size:2.2rem}
+label{display:grid;gap:7px;font-weight:600;font-size:.95rem}
+input,select,textarea{font:inherit;font-size:1rem;width:100%;min-height:50px;padding:12px 14px;background:#fff;color:#0b1626;border:2px solid transparent;border-radius:var(--r)}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--amber);outline-offset:1px}
+.note{font-size:.9rem;color:var(--muted)}
+
+footer{border-top:1px solid var(--line);padding:36px 0 30px;color:var(--muted);font-size:.95rem}
+footer .wrap{display:grid;gap:10px}
+
+/* mobile bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(11,22,38,.96);border-top:1px solid var(--line)}
+.mbar .btn{min-height:52px}
+
+/* reveal */
+.rv{opacity:1}
+@media (prefers-reduced-motion:no-preference){
+  .js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+  .js .rv.in{opacity:1;transform:none}
+  .hero h1,.hero p,.hero .cta,.hero .tag{animation:rise .9s cubic-bezier(.16,1,.3,1) both}
+  .hero h1{animation-delay:.08s}.hero p{animation-delay:.2s}.hero .cta{animation-delay:.3s}
+  @keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+}
+
+@media (min-width:760px){
+  body{padding-bottom:0}
+  .mbar{display:none}
+  .brand span{display:block}
+  .nav ul{display:flex}
+  .proof .wrap{grid-template-columns:repeat(4,1fr)}
+  .proof .wrap>div,.proof .wrap>div:nth-child(odd),.proof .wrap>div:nth-child(even){padding:30px 22px;border:0;border-left:1.5px solid rgba(26,18,0,.25)}
+  .proof .wrap>div:first-child{border-left:0;padding-left:0}
+  .cap-grid{grid-template-columns:repeat(6,1fr)}
+  .cap{grid-column:span 2}
+  .cap.wide{grid-column:span 6}
+  .svc{grid-template-columns:1fr 1fr;column-gap:56px}
+  .con-list{grid-template-columns:repeat(3,1fr)}
+  .contact .grid{grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+  .hero .wrap{padding-bottom:64px}
+}
+@media (max-width:420px){
+  .storm-grid div{flex-direction:column;gap:6px}
+  .storm-grid p{text-align:left}
+  .svc li small{display:none}
+}
+</style>
+</head>
+<body>
+<div class="concept">Website concept prepared for DTS, Inc. Not the official site. <a href="http://www.dts-inc.org/" target="_blank" rel="noopener">See the current site (dts-inc.org)</a></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="DTS, Inc. home">
+      <img src="assets/img-594f3f1027.webp" alt="DTS, Inc. logo" width="120" height="40">
+      <span>Disaster Recovery Management</span>
+    </a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contracts">Contracts</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-fill" href="tel:(864) 244-5284">Call</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="hero-bg" role="img" aria-label="A lone bare tree silhouetted against a golden sunset sky"></div>
+  <div class="wrap">
+    <div class="tag">Greer, South Carolina</div>
+    <h1>Storm cleanup <em>and recovery</em></h1>
+    <p>Hurricane, tornado and ice storm debris, hauled, reduced and documented on a daily basis.</p>
+    <div class="cta">
+      <a class="btn btn-fill" href="tel:(864) 244-5284">Call (864) 244-5284</a>
+      <a class="btn btn-line" href="#contact">Request an estimate</a>
+    </div>
+  </div>
+</section>
+
+<div class="proof">
+  <div class="wrap">
+    <div><b>25</b><span>years in storm cleanup</span></div>
+    <div><b>60+</b><span>major projects worked</span></div>
+    <div><b>2</b><span>state DOTs: SCDOT and NCDOT approved</span></div>
+    <div><b>3</b><span>pre-event contracts in South Carolina</span></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv">Built for the <span class="amber">day after the storm.</span></h2>
+    <p class="lead rv">DTS handles several job tasks at once, from debris hauling to tree removal on city rights of way, for contractors and for public agencies.</p>
+    <div class="storm-grid">
+      <div class="rv"><h3>Hurricanes</h3><p>Disaster recovery during the storm season.</p></div>
+      <div class="rv"><h3>Tornados</h3><p>Debris reduction and hauling after the path of destruction.</p></div>
+      <div class="rv"><h3>Ice storms</h3><p>Tree removal and trimming on city rights of way.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="caps" id="capabilities">
+  <div class="wrap">
+    <h2 class="rv">What we run on a job</h2>
+    <div class="cap-grid">
+      <article class="cap rv"><h3>Debris hauling</h3><p>Hauling storm debris off the job.</p></article>
+      <article class="cap rv"><h3>Debris reduction</h3><p>Reducing debris volume, with grinding and trucking in the mix.</p></article>
+      <article class="cap rv"><h3>Tree work</h3><p>Tree removal and trimming on city rights of way.</p></article>
+      <article class="cap wide rv"><h3>Office management</h3><p>Project administration handled alongside the field work, so crews and paperwork stay in step.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2 class="rv">Mobilized within hours</h2>
+    <p class="rv">Our First Response Team can be mobilized within hours of a notice to proceed.</p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2 class="rv">Services</h2>
+    <ul class="svc">
+      <li class="rv">Disaster recovery</li>
+      <li class="rv">Debris collection and reduction</li>
+      <li class="rv">Wild fire reclamation</li>
+      <li class="rv">Beach restoration</li>
+      <li class="rv">Water way and drainage reclamation</li>
+      <li class="rv">Flooding</li>
+      <li class="rv">Demolition</li>
+      <li class="rv">Emergency planning</li>
+      <li class="rv">Public assistance training</li>
+    </ul>
+  </div>
+</section>
+
+<section class="contracts" id="contracts">
+  <div class="wrap">
+    <h2 class="rv">Approved and <span class="amber">under contract</span></h2>
+    <div class="con-list">
+      <div class="con rv"><h3>SCDOT and NCDOT</h3><p>Approved contractor for South Carolina DOT and North Carolina DOT.</p></div>
+      <div class="con rv"><h3>Greenville County</h3><p>Pre-event contract in South Carolina, alongside Greater Greenville Sanitation.</p></div>
+      <div class="con rv"><h3>Edgefield County</h3><p>Pre-event contract in South Carolina.</p></div>
+    </div>
+    <p class="docs rv"><b>Documented daily.</b> DTS built a tracking system that gives precise, detailed documentation every day, with staff trained in safety and in compliance with government regulations.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap grid">
+    <div>
+      <h2 class="rv">Talk to <span class="amber">DTS</span></h2>
+      <p class="lead rv">Tell us what you need cleared or planned. Daniel McClaran, President and CEO, leads the company.</p>
+      <dl class="facts rv">
+        <div><dt>Phone</dt><dd><a class="big" href="tel:(864) 244-5284">(864) 244-5284</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@dts-inc.org">info@dts-inc.org</a></dd></div>
+        <div><dt>Office</dt><dd><address>201 South Buncombe Road<br>Greer, SC 29650</address></dd></div>
+        <div><dt>Fax</dt><dd>(864) 895-4807</dd></div>
+      </dl>
+    </div>
+    <form class="rv" onsubmit="event.preventDefault(); alert('Demo form: in the real site this sends your request to DTS, Inc.')">
+      <h3>Request an estimate</h3>
+      <label>Name<input type="text" name="name" autocomplete="name" required></label>
+      <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+      <label>Email<input type="email" name="email" autocomplete="email"></label>
+      <label>What do you need?
+        <select name="need">
+          <option>Storm debris cleanup</option>
+          <option>Tree removal or trimming</option>
+          <option>Debris hauling or grinding</option>
+          <option>Pre-event contract or emergency planning</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label>Location and details<textarea name="details"></textarea></label>
+      <button class="btn btn-fill" type="submit">Send request</button>
+      <p class="note">Or call (864) 244-5284.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>DTS, Inc. Disaster Recovery Management. 201 South Buncombe Road, Greer, SC 29650.</div>
+    <div><a href="tel:(864) 244-5284">(864) 244-5284</a> &nbsp;|&nbsp; <a href="mailto:info@dts-inc.org">info@dts-inc.org</a></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-fill" href="tel:(864) 244-5284">Call now</a>
+  <a class="btn btn-line" href="#contact">Get a quote</a>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+<script>(function(){try{var u=new URL(location.href);if(u.searchParams.has('hf')){localStorage.setItem('hf-owner','1');u.searchParams.delete('hf');history.replaceState(null,'',u.pathname+u.search+u.hash);}if(localStorage.getItem('hf-owner'))return;}catch(e){}if(navigator.webdriver||!navigator.sendBeacon)return;var sent=false,t;function go(){if(sent||document.visibilityState!=='visible')return;sent=true;navigator.sendBeacon('https://app.highfieldhq.com/api/view',new Blob(['dts-inc-747'],{type:'text/plain'}));}function arm(){clearTimeout(t);if(document.visibilityState==='visible')t=setTimeout(go,4000);}document.addEventListener('visibilitychange',arm);arm();})();</script>
+</body>
+</html>
