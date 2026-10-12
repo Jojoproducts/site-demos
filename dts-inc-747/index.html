@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="demo-build" content="v2-1791781954284">
+<meta name="demo-build" content="v3-1791823435515">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
@@ -12,9 +12,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#0b1626;
-  --ink-2:#102036;
-  --ink-3:#18304d;
+  --ink:#1b1812;
+  --ink-2:#26221a;
+  --ink-3:#332d22;
   --line:rgba(236,230,214,.16);
   --text:#ece6d6;
   --muted:#b4bccb;
@@ -39,7 +39,7 @@ h2{font-size:clamp(2.4rem,6vw,4.4rem)}
 .concept a{font-weight:600;text-underline-offset:3px}
 
 /* nav */
-.nav{position:sticky;top:0;z-index:20;background:rgba(11,22,38,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{position:sticky;top:0;z-index:20;background:rgba(27,24,18,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand img{height:40px;width:auto;border-radius:var(--r)}
@@ -51,7 +51,7 @@ h2{font-size:clamp(2.4rem,6vw,4.4rem)}
 .btn:active{transform:translateY(1px) scale(.98)}
 .btn-fill{background:var(--amber);color:var(--amber-ink)}
 .btn-fill:hover{background:#ffc233;border-color:#ffc233}
-.btn-line{background:rgba(11,22,38,.55);color:var(--text);border-color:rgba(236,230,214,.6)}
+.btn-line{background:rgba(27,24,18,.55);color:var(--text);border-color:rgba(236,230,214,.6)}
 .btn-line:hover{border-color:var(--amber);color:var(--amber)}
 .nav .btn{min-height:44px;padding:0 16px}
 :focus-visible{outline:3px solid var(--amber);outline-offset:3px}
@@ -59,7 +59,7 @@ h2{font-size:clamp(2.4rem,6vw,4.4rem)}
 /* hero */
 .hero{position:relative;min-height:calc(100dvh - 110px);display:flex;align-items:flex-end;isolation:isolate;border-bottom:1px solid var(--line)}
 .hero-bg{position:absolute;inset:0;z-index:-2;background:url('assets/img-c6e4bd4f59.webp') center 40%/cover}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(11,22,38,.55) 0%,rgba(11,22,38,.55) 35%,rgba(11,22,38,.93) 100%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(27,24,18,.55) 0%,rgba(27,24,18,.55) 35%,rgba(27,24,18,.93) 100%)}
 .hero .wrap{padding-top:48px;padding-bottom:44px;width:100%}
 .hero h1{font-size:clamp(3rem,11.5vw,8.2rem);max-width:12ch}
 .hero h1 em{font-style:normal;color:var(--amber)}
@@ -97,9 +97,14 @@ section{padding:88px 0}
 /* response band */
 .band{position:relative;isolation:isolate;padding:120px 0;border-block:1px solid var(--line)}
 .band::before{content:"";position:absolute;inset:0;z-index:-2;background:url('assets/img-f58baa96e8.webp') center/cover;filter:saturate(.7)}
-.band::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(11,22,38,.82)}
+.band::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(27,24,18,.82)}
 .band h2{max-width:14ch}
 .band p{max-width:46ch;margin-top:22px;font-size:1.15rem}
+
+/* photo strips */
+.strip{height:clamp(200px,34vw,380px);background-size:cover;background-position:center;border-block:1px solid var(--line)}
+.strip-a{background-image:url('assets/img-a22d3122d6.webp')}
+.strip-b{background-image:url('assets/img-c50b97cd3c.webp')}
 
 /* services */
 .svc{margin-top:44px;display:grid;gap:0;grid-template-columns:1fr}
@@ -126,7 +131,7 @@ section{padding:88px 0}
 form{background:var(--ink-3);padding:26px 22px;border-radius:var(--r);display:grid;gap:18px;border-top:4px solid var(--amber)}
 form h3{font-size:2.2rem}
 label{display:grid;gap:7px;font-weight:600;font-size:.95rem}
-input,select,textarea{font:inherit;font-size:1rem;width:100%;min-height:50px;padding:12px 14px;background:#fff;color:#0b1626;border:2px solid transparent;border-radius:var(--r)}
+input,select,textarea{font:inherit;font-size:1rem;width:100%;min-height:50px;padding:12px 14px;background:#fff;color:#1b1812;border:2px solid transparent;border-radius:var(--r)}
 textarea{min-height:120px;resize:vertical}
 input:focus,select:focus,textarea:focus{outline:3px solid var(--amber);outline-offset:1px}
 .note{font-size:.9rem;color:var(--muted)}
@@ -135,7 +140,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 30px;color:var(--muted);f
 footer .wrap{display:grid;gap:10px}
 
 /* mobile bar */
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(11,22,38,.96);border-top:1px solid var(--line)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(27,24,18,.96);border-top:1px solid var(--line)}
 .mbar .btn{min-height:52px}
 
 /* reveal */
@@ -224,6 +229,8 @@ footer .wrap{display:grid;gap:10px}
   </div>
 </section>
 
+<div class="strip strip-a" role="img" aria-label="Golden autumn treetops against a blue sky"></div>
+
 <section class="caps" id="capabilities">
   <div class="wrap">
     <h2 class="rv">What we run on a job</h2>
@@ -271,6 +278,8 @@ footer .wrap{display:grid;gap:10px}
     <p class="docs rv"><b>Documented daily.</b> DTS built a tracking system that gives precise, detailed documentation every day, with staff trained in safety and in compliance with government regulations.</p>
   </div>
 </section>
+
+<div class="strip strip-b" role="img" aria-label="Sun rays through a stand of tall trees"></div>
 
 <section class="contact" id="contact">
   <div class="wrap grid">
